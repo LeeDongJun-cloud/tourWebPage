@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="nav.css">
+   <link rel="stylesheet" href="jquery.mobile.external-png-1.4.5.css">
+   <link rel="stylesheet" href="jquery.mobile.external-png-1.4.5.min.css">
+   <link rel="stylesheet" href="jquery.mobile.icons-1.4.5.css">
+   <link rel="stylesheet" href="jquery.mobile.icons-1.4.5.min.css">
+   <link rel="stylesheet" href="jquery.mobile.inline-png-1.4.5.css">
+   <link rel="stylesheet" href="jquery.mobile.inline-png-1.4.5.min.css">
+   <link rel="stylesheet" href="jquery.mobile.inline-svg-1.4.5.css">
+   <link rel="stylesheet" href="jquery.mobile.inline-svg-1.4.5.min.css">
+   <link rel="stylesheet" href="jquery.mobile.structure-1.4.5.css">
+   <link rel="stylesheet" href="jquery.mobile.structure-1.4.5.min.css">
+   <script src="jquery-1.11.3.min.js"></script>
+   <script src="jquery.mobile-1.4.5.js"></script>
+<script src="javascript.js"></script>
+
+
+<body>
+	<section id="main" data-role="page" data-theme="a">
+		<header data-role="header">
+			<a href="#main" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ">홈</a>
+			<h1>국내 여행지 추천</h1>
+			<a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">검색</a>
+		</header>
+			<div class="scroll-a">
+				<div class="scroll-b">
+					<ul class="nav">
+						<li class="nav"><a href="sightseeing.html" data-ajax="false" class="ui-btn ui-btn-b nav">관광지</a></li>
+						<li class="nav"><a href="restaurant.html" data-ajax="false" class="ui-btn ui-btn-b nav">유명맛집</a></li>
+						<li class="nav"><a href="lodging.html" data-ajax="false" class="ui-btn ui-btn-b nav">숙소</a></li>
+						<li class="nav"><a href="photospot.html" data-ajax="false" class="ui-btn ui-btn-b nav">사진명소</a></li>
+						<li class="nav"><a href="festival.html" data-ajax="false" class="ui-btn ui-btn-b nav">축제</a></li>
+						<li class="nav"><a href="cafe.html" data-ajax="false" class="ui-btn ui-btn-b nav">카페</a></li>
+						<li class="nav"><a href="activity.html" data-ajax="false" class="ui-btn ui-btn-b nav">액티비티</a></li>
+						<li class="nav"><a href="diblist.html" data-ajax="false" class="ui-btn ui-btn-b nav">찜목록</a></li>
+					</ul>
+				</div>
+			</div>
+		<br/>
+		<br/>
+		<article data-role="content" class="ui-content">
+			<div class="imagemap">
+				<div id="map" class="map">
+					<img src="marker.png" width="20px" height="20px" class="marker" style="left:190px; top:100px" />
+					<a href="seoul.html" data-ajax="false" class="marker" style="left:180px; top:80px;">서울</a>
+					<img src="marker.png" width="20px" height="20px" class="marker" style="left:230px; top:120px" />
+					<a href="#" class="marker" style="left:220px; top:100px;">경기</a>
+					<img src="marker.png" width="20px" height="20px" class="marker" style="left:140px; top:80px" />
+					<a href="#" class="marker" style="left:130px; top:60px;">인천</a>
+					<img src="marker.png" width="20px" height="20px" class="marker" style="left:300px; top:80px" />
+					<a href="#" class="marker" style="left:290px; top:60px;">강원</a>
+					<img src="marker.png" width="20px" height="20px" class="marker" style="left:250px; top:170px" />
+					<a href="#" class="marker" style="left:240px; top:150px;">충북</a>
+					<img src="marker.png" width="20px" height="20px" class="marker" style="left:215px; top:220px" />
+					<a href="#" class="marker" style="left:205px; top:200px;">대전</a>
+					<img src="marker.png" width="20px" height="20px" class="marker" style="left:170px; top:190px" />
+					<a href="#" class="marker" style="left:160px; top:170px;">충남</a>
+					<img src="marker.png" width="20px" height="20px" class="marker" style="left:350px; top:210px" />
+					<a href="#" class="marker" style="left:340px; top:190px;">경북</a>
+					<img src="marker.png" width="20px" height="20px" class="marker" style="left:320px; top:270px" />
+					<a href="#" class="marker" style="left:310px; top:250px;">대구</a>
+					<img src="marker.png" width="20px" height="20px" class="marker" style="left:270px; top:320px" />
+					<a href="#" class="marker" style="left:260px; top:300px;">경남</a>
+					<img src="marker.png" width="20px" height="20px" class="marker" style="left:380px; top:300px" />
+					<a href="#" class="marker" style="left:370px; top:280px;">울산</a>
+					<img src="marker.png" width="20px" height="20px" class="marker" style="left:360px; top:340px" />
+					<a href="#" class="marker" style="left:350px; top:320px;">부산</a>
+					<img src="marker.png" width="20px" height="20px" class="marker" style="left:190px; top:280px" />
+					<a href="#" class="marker" style="left:180px; top:260px;">전북</a>
+					<img src="marker.png" width="20px" height="20px" class="marker" style="left:170px; top:350px" />
+					<a href="#" class="marker" style="left:160px; top:330px;">광주</a>
+					<img src="marker.png" width="20px" height="20px" class="marker" style="left:210px; top:360px" />
+					<a href="#" class="marker" style="left:200px; top:340px;">전남</a>
+					<img src="marker.png" width="20px" height="20px" class="marker" style="left:400px; top:430px" />
+					<a href="#" class="marker" style="left:390px; top:410px;">제주</a>
+				</div>
+			</div>
+			<ul data-role="listview" data-inset="true">
+				<li>
+					<a href="#seoul"><img src="seoul.png"/>서울특별시
+						<p>서울 여행</p><span class="ui-li-count">8</span></a></li>
+				<li>
+					<a href="#gyeonggi"><img src="gyeonggi.png"/>경기도
+						<p>경기도 여행</p><span class="ui-li-count">8</span></a></li>
+				<li>
+					<a href="#incheon"><img src="Incheon.png"/>인천광역시
+						<p>인천광역시 여행</p><span class="ui-li-count">8</span></a></li>
+				<li>
+					<a href="#gangwon"><img src="gangwon.png"/>강원도
+						<p>강원도 여행</p><span class="ui-li-count">8</span></a></li>
+				<li>
+					<a href="#chungbuk"><img src="chungbuk.png"/>충청북도
+						<p>충청북도 여행</p><span class="ui-li-count">8</span></a></li>
+				<li>
+					<a href="#daejeon"><img src="daejeon.png"/>대전광역시
+						<p>대전광역시 여행</p><span class="ui-li-count">8</span></a></li>
+				<li>
+					<a href="#chungnam"><img src="chungnam.png"/>충청남도
+						<p>충청남도 여행</p><span class="ui-li-count">8</span></a></li>
+				<li>
+					<a href="#gyeongbuk"><img src="gyeongbuk.png"/>경상북도
+						<p>경상북도 여행</p><span class="ui-li-count">8</span></a></li>
+				<li>
+					<a href="#daegu"><img src="daegu.png"/>대구광역시
+						<p>대구광역시 여행</p><span class="ui-li-count">8</span></a></li>
+				<li>
+					<a href="#gyeongnam"><img src="gyeongnam.png"/>경상남도
+						<p>경상남도 여행</p><span class="ui-li-count">8</span></a></li>
+				<li>
+					<a href="#ulsan"><img src="ulsan.png"/>울산광역시
+						<p>울산광역시 여행</p><span class="ui-li-count">8</span></a></li>
+				<li>
+					<a href="#busan"><img src="busan.png"/>부산광역시
+						<p>부산광역시 여행</p><span class="ui-li-count">8</span></a></li>
+				<li>
+					<a href="#jeonbuk"><img src="jeonbuk.gif"/>전라북도
+						<p>전라북도 여행</p><span class="ui-li-count">8</span></a></li>
+				<li>
+					<a href="#gwangju"><img src="gwangju.png"/>광주광역시
+						<p>광주광역시 여행</p><span class="ui-li-count">8</span></a></li>
+				<li>
+					<a href="#jeonnam"><img src="jeonnam.png"/>전라남도
+						<p>전라남도 여행</p><span class="ui-li-count">8</span></a></li>
+				<li>
+					<a href="#jeju"><img src="jeju.png"/>제주특별자치도
+						<p>제주특별자치도 여행</p><span class="ui-li-count">8</span></a></li>
+			</ul>
+		</article>
+		<footer data-role="footer">
+			<h1>16112492 컴퓨터공학과 이동준</h1>
+		</footer>
+	</section>
+	<section data-role="page" id="seoul">
+		<header data-role="header">
+			<a href="#main" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ">홈</a>
+			<h1>국내 여행지 추천</h1>
+			<a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">검색</a>
+		</header>
+			<div class="scroll-a">
+				<div class="scroll-b">
+					<ul class="nav">
+						<li class="nav"><a href="sightseeing.html" data-ajax="false" class="ui-btn ui-btn-b nav">관광지</a></li>
+						<li class="nav"><a href="restaurant.html" data-ajax="false" class="ui-btn ui-btn-b nav">유명맛집</a></li>
+						<li class="nav"><a href="lodging.html" data-ajax="false" class="ui-btn ui-btn-b nav">숙소</a></li>
+						<li class="nav"><a href="photospot.html" data-ajax="false" class="ui-btn ui-btn-b nav">사진명소</a></li>
+						<li class="nav"><a href="festival.html" data-ajax="false" class="ui-btn ui-btn-b nav">축제</a></li>
+						<li class="nav"><a href="cafe.html" data-ajax="false" class="ui-btn ui-btn-b nav">카페</a></li>
+						<li class="nav"><a href="activity.html" data-ajax="false" class="ui-btn ui-btn-b nav">액티비티</a></li>
+						<li class="nav"><a href="diblist.html" data-ajax="false" class="ui-btn ui-btn-b nav">찜목록</a></li>
+					</ul>
+				</div>
+			</div>
+		<br/>
+		<br/>
+		<article data-role="content" class="ui-content">
+			<ul data-role="listview" data-inset="true">
+				<li><a href="seoul.html#seoul_sightseeing" data-ajax="false">서울특별시 관광지</a></li>
+				<li><a href="seoul.html#seoul_restaurant" data-ajax="false">서울특별시 유명맛집</a></li>
+				<li><a href="seoul.html#seoul_lodging" data-ajax="false">서울특별시 숙소</a></li>
+				<li><a href="seoul.html#seoul_photospot" data-ajax="false">서울특별시 사진명소</a></li>
+				<li><a href="seoul.html#seoul_festival">서울특별시 축제</a></li>
+				<li><a href="seoul.html#seoul_cafe">서울특별시 카페</a></li>
+				<li><a href="seoul.html#seoul_activity">서울특별시 액티비티</a></li>
+			</ul>
+		</article>
+		<footer data-role="footer" data-fullscreen="true" data-position="fixed">
+			<h1>16112492 컴퓨터공학과 이동준</h1>
+		</footer>
+	</section>
+	<section data-role="page" id="gyeonggi">
+		<header data-role="header">
+			<a href="#main" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ">홈</a>
+			<h1>국내 여행지 추천</h1>
+			<a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">검색</a>
+		</header>
+			<div class="scroll-a">
+				<div class="scroll-b">
+					<ul class="nav">
+						<li class="nav"><a href="sightseeing.html" data-ajax="false" class="ui-btn ui-btn-b nav">관광지</a></li>
+						<li class="nav"><a href="restaurant.html" data-ajax="false" class="ui-btn ui-btn-b nav">유명맛집</a></li>
+						<li class="nav"><a href="lodging.html" data-ajax="false" class="ui-btn ui-btn-b nav">숙소</a></li>
+						<li class="nav"><a href="photospot.html" data-ajax="false" class="ui-btn ui-btn-b nav">사진명소</a></li>
+						<li class="nav"><a href="festival.html" data-ajax="false" class="ui-btn ui-btn-b nav">축제</a></li>
+						<li class="nav"><a href="cafe.html" data-ajax="false" class="ui-btn ui-btn-b nav">카페</a></li>
+						<li class="nav"><a href="activity.html" data-ajax="false" class="ui-btn ui-btn-b nav">액티비티</a></li>
+						<li class="nav"><a href="diblist.html" data-ajax="false" class="ui-btn ui-btn-b nav">찜목록</a></li>
+					</ul>
+				</div>
+			</div>
+		<br/>
+		<br/>
+		<article data-role="content" class="ui-content">
+			<ul data-role="listview" data-inset="true">
+				<li><a href="">경기도 관광지</a></li>
+				<li><a href="">경기도 유명맛집</a></li>
+				<li><a href="">경기도 숙소</a></li>
+				<li><a href="">경기도 사진명소</a></li>
+				<li><a href="">경기도 축제</a></li>
+				<li><a href="">경기도 카페</a></li>
+				<li><a href="">경기도 액티비티</a></li>
+			</ul>
+		</article>
+		<footer data-role="footer" data-fullscreen="true" data-position="fixed">
+			<h1>16112492 컴퓨터공학과 이동준</h1>
+		</footer>
+	</section>
+	<section data-role="page" id="incheon">
+		<header data-role="header">
+			<a href="#main" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ">홈</a>
+			<h1>국내 여행지 추천</h1>
+			<a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">검색</a>
+		</header>
+			<div class="scroll-a">
+				<div class="scroll-b">
+					<ul class="nav">
+						<li class="nav"><a href="sightseeing.html" data-ajax="false" class="ui-btn ui-btn-b nav">관광지</a></li>
+						<li class="nav"><a href="restaurant.html" data-ajax="false" class="ui-btn ui-btn-b nav">유명맛집</a></li>
+						<li class="nav"><a href="lodging.html" data-ajax="false" class="ui-btn ui-btn-b nav">숙소</a></li>
+						<li class="nav"><a href="photospot.html" data-ajax="false" class="ui-btn ui-btn-b nav">사진명소</a></li>
+						<li class="nav"><a href="festival.html" data-ajax="false" class="ui-btn ui-btn-b nav">축제</a></li>
+						<li class="nav"><a href="cafe.html" data-ajax="false" class="ui-btn ui-btn-b nav">카페</a></li>
+						<li class="nav"><a href="activity.html" data-ajax="false" class="ui-btn ui-btn-b nav">액티비티</a></li>
+						<li class="nav"><a href="diblist.html" data-ajax="false" class="ui-btn ui-btn-b nav">찜목록</a></li>
+					</ul>
+				</div>
+			</div>
+		<br/>
+		<br/>
+		<article data-role="content" class="ui-content">
+			<ul data-role="listview" data-inset="true">
+				<li><a href="">인천광역시 관광지</a></li>
+				<li><a href="">인천광역시 유명맛집</a></li>
+				<li><a href="">인천광역시 숙소</a></li>
+				<li><a href="">인천광역시 사진명소</a></li>
+				<li><a href="">인천광역시 축제</a></li>
+				<li><a href="">인천광역시 카페</a></li>
+				<li><a href="">인천광역시 액티비티</a></li>
+			</ul>
+		</article>
+		<footer data-role="footer" data-fullscreen="true" data-position="fixed">
+			<h1>16112492 컴퓨터공학과 이동준</h1>
+		</footer>
+	</section>
+	<section data-role="page" id="gangwon">
+		<header data-role="header">
+			<a href="#main" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ">홈</a>
+			<h1>국내 여행지 추천</h1>
+			<a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">검색</a>
+		</header>
+			<div class="scroll-a">
+				<div class="scroll-b">
+					<ul class="nav">
+						<li class="nav"><a href="sightseeing.html" data-ajax="false" class="ui-btn ui-btn-b nav">관광지</a></li>
+						<li class="nav"><a href="restaurant.html" data-ajax="false" class="ui-btn ui-btn-b nav">유명맛집</a></li>
+						<li class="nav"><a href="lodging.html" data-ajax="false" class="ui-btn ui-btn-b nav">숙소</a></li>
+						<li class="nav"><a href="photospot.html" data-ajax="false" class="ui-btn ui-btn-b nav">사진명소</a></li>
+						<li class="nav"><a href="festival.html" data-ajax="false" class="ui-btn ui-btn-b nav">축제</a></li>
+						<li class="nav"><a href="cafe.html" data-ajax="false" class="ui-btn ui-btn-b nav">카페</a></li>
+						<li class="nav"><a href="activity.html" data-ajax="false" class="ui-btn ui-btn-b nav">액티비티</a></li>
+						<li class="nav"><a href="diblist.html" data-ajax="false" class="ui-btn ui-btn-b nav">찜목록</a></li>
+					</ul>
+				</div>
+			</div>
+		<br/>
+		<br/>
+		<article data-role="content" class="ui-content">
+			<ul data-role="listview" data-inset="true">
+				<li><a href="">강원도 관광지</a></li>
+				<li><a href="">강원도 유명맛집</a></li>
+				<li><a href="">강원도 숙소</a></li>
+				<li><a href="">강원도 사진명소</a></li>
+				<li><a href="">강원도 축제</a></li>
+				<li><a href="">강원도 카페</a></li>
+				<li><a href="">강원도 액티비티</a></li>
+			</ul>
+		</article>
+		<footer data-role="footer" data-fullscreen="true" data-position="fixed">
+			<h1>16112492 컴퓨터공학과 이동준</h1>
+		</footer>
+	</section>
+	<section data-role="page" id="chungbuk">
+		<header data-role="header">
+			<a href="#main" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ">홈</a>
+			<h1>국내 여행지 추천</h1>
+			<a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">검색</a>
+		</header>
+			<div class="scroll-a">
+				<div class="scroll-b">
+					<ul class="nav">
+						<li class="nav"><a href="sightseeing.html" data-ajax="false" class="ui-btn ui-btn-b nav">관광지</a></li>
+						<li class="nav"><a href="restaurant.html" data-ajax="false" class="ui-btn ui-btn-b nav">유명맛집</a></li>
+						<li class="nav"><a href="lodging.html" data-ajax="false" class="ui-btn ui-btn-b nav">숙소</a></li>
+						<li class="nav"><a href="photospot.html" data-ajax="false" class="ui-btn ui-btn-b nav">사진명소</a></li>
+						<li class="nav"><a href="festival.html" data-ajax="false" class="ui-btn ui-btn-b nav">축제</a></li>
+						<li class="nav"><a href="cafe.html" data-ajax="false" class="ui-btn ui-btn-b nav">카페</a></li>
+						<li class="nav"><a href="activity.html" data-ajax="false" class="ui-btn ui-btn-b nav">액티비티</a></li>
+						<li class="nav"><a href="diblist.html" data-ajax="false" class="ui-btn ui-btn-b nav">찜목록</a></li>
+					</ul>
+				</div>
+			</div>
+		<br/>
+		<br/>
+		<article data-role="content" class="ui-content">
+			<ul data-role="listview" data-inset="true">
+				<li><a href="">강원도 관광지</a></li>
+				<li><a href="">강원도 유명맛집</a></li>
+				<li><a href="">강원도 숙소</a></li>
+				<li><a href="">강원도 사진명소</a></li>
+				<li><a href="">강원도 축제</a></li>
+				<li><a href="">강원도 카페</a></li>
+				<li><a href="">강원도 액티비티</a></li>
+			</ul>
+		</article>
+		<footer data-role="footer" data-fullscreen="true" data-position="fixed">
+			<h1>16112492 컴퓨터공학과 이동준</h1>
+		</footer>
+	</section>
+	<section data-role="page" id="chungbuk">
+		<header data-role="header">
+			<a href="#main" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ">홈</a>
+			<h1>국내 여행지 추천</h1>
+			<a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">검색</a>
+		</header>
+			<div class="scroll-a">
+				<div class="scroll-b">
+					<ul class="nav">
+						<li class="nav"><a href="sightseeing.html" data-ajax="false" class="ui-btn ui-btn-b nav">관광지</a></li>
+						<li class="nav"><a href="restaurant.html" data-ajax="false" class="ui-btn ui-btn-b nav">유명맛집</a></li>
+						<li class="nav"><a href="lodging.html" data-ajax="false" class="ui-btn ui-btn-b nav">숙소</a></li>
+						<li class="nav"><a href="photospot.html" data-ajax="false" class="ui-btn ui-btn-b nav">사진명소</a></li>
+						<li class="nav"><a href="festival.html" data-ajax="false" class="ui-btn ui-btn-b nav">축제</a></li>
+						<li class="nav"><a href="cafe.html" data-ajax="false" class="ui-btn ui-btn-b nav">카페</a></li>
+						<li class="nav"><a href="activity.html" data-ajax="false" class="ui-btn ui-btn-b nav">액티비티</a></li>
+						<li class="nav"><a href="diblist.html" data-ajax="false" class="ui-btn ui-btn-b nav">찜목록</a></li>
+					</ul>
+				</div>
+			</div>
+		<br/>
+		<br/>
+		<article data-role="content" class="ui-content">
+			<ul data-role="listview" data-inset="true">
+				<li><a href="">충청북도 관광지</a></li>
+				<li><a href="">충청북도 유명맛집</a></li>
+				<li><a href="">충청북도 숙소</a></li>
+				<li><a href="">충청북도 사진명소</a></li>
+				<li><a href="">충청북도 축제</a></li>
+				<li><a href="">충청북도 카페</a></li>
+				<li><a href="">충청북도 액티비티</a></li>
+			</ul>
+		</article>
+		<footer data-role="footer" data-fullscreen="true" data-position="fixed">
+			<h1>16112492 컴퓨터공학과 이동준</h1>
+		</footer>
+	</section>
+	<section data-role="page" id="daejeon">
+		<header data-role="header">
+			<a href="#main" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ">홈</a>
+			<h1>국내 여행지 추천</h1>
+			<a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">검색</a>
+		</header>
+			<div class="scroll-a">
+				<div class="scroll-b">
+					<ul class="nav">
+						<li class="nav"><a href="sightseeing.html" data-ajax="false" class="ui-btn ui-btn-b nav">관광지</a></li>
+						<li class="nav"><a href="restaurant.html" data-ajax="false" class="ui-btn ui-btn-b nav">유명맛집</a></li>
+						<li class="nav"><a href="lodging.html" data-ajax="false" class="ui-btn ui-btn-b nav">숙소</a></li>
+						<li class="nav"><a href="photospot.html" data-ajax="false" class="ui-btn ui-btn-b nav">사진명소</a></li>
+						<li class="nav"><a href="festival.html" data-ajax="false" class="ui-btn ui-btn-b nav">축제</a></li>
+						<li class="nav"><a href="cafe.html" data-ajax="false" class="ui-btn ui-btn-b nav">카페</a></li>
+						<li class="nav"><a href="activity.html" data-ajax="false" class="ui-btn ui-btn-b nav">액티비티</a></li>
+						<li class="nav"><a href="diblist.html" data-ajax="false" class="ui-btn ui-btn-b nav">찜목록</a></li>
+					</ul>
+				</div>
+			</div>
+		<br/>
+		<br/>
+		<article data-role="content" class="ui-content">
+			<ul data-role="listview" data-inset="true">
+				<li><a href="">대전광역시 관광지</a></li>
+				<li><a href="">대전광역시 유명맛집</a></li>
+				<li><a href="">대전광역시 숙소</a></li>
+				<li><a href="">대전광역시 사진명소</a></li>
+				<li><a href="">대전광역시 축제</a></li>
+				<li><a href="">대전광역시 카페</a></li>
+				<li><a href="">대전광역시 액티비티</a></li>
+			</ul>
+		</article>
+		<footer data-role="footer" data-fullscreen="true" data-position="fixed">
+			<h1>16112492 컴퓨터공학과 이동준</h1>
+		</footer>
+	</section>
+	<section data-role="page" id="chungnam">
+		<header data-role="header">
+			<a href="#main" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ">홈</a>
+			<h1>국내 여행지 추천</h1>
+			<a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">검색</a>
+		</header>
+			<div class="scroll-a">
+				<div class="scroll-b">
+					<ul class="nav">
+						<li class="nav"><a href="sightseeing.html" data-ajax="false" class="ui-btn ui-btn-b nav">관광지</a></li>
+						<li class="nav"><a href="restaurant.html" data-ajax="false" class="ui-btn ui-btn-b nav">유명맛집</a></li>
+						<li class="nav"><a href="lodging.html" data-ajax="false" class="ui-btn ui-btn-b nav">숙소</a></li>
+						<li class="nav"><a href="photospot.html" data-ajax="false" class="ui-btn ui-btn-b nav">사진명소</a></li>
+						<li class="nav"><a href="festival.html" data-ajax="false" class="ui-btn ui-btn-b nav">축제</a></li>
+						<li class="nav"><a href="cafe.html" data-ajax="false" class="ui-btn ui-btn-b nav">카페</a></li>
+						<li class="nav"><a href="activity.html" data-ajax="false" class="ui-btn ui-btn-b nav">액티비티</a></li>
+						<li class="nav"><a href="diblist.html" data-ajax="false" class="ui-btn ui-btn-b nav">찜목록</a></li>
+					</ul>
+				</div>
+			</div>
+		<br/>
+		<br/>
+		<article data-role="content" class="ui-content">
+			<ul data-role="listview" data-inset="true">
+				<li><a href="">충청남도 관광지</a></li>
+				<li><a href="">충청남도 유명맛집</a></li>
+				<li><a href="">충청남도 숙소</a></li>
+				<li><a href="">충청남도 사진명소</a></li>
+				<li><a href="">충청남도 축제</a></li>
+				<li><a href="">충청남도 카페</a></li>
+				<li><a href="">충청남도 액티비티</a></li>
+
+			</ul>
+		</article>
+		<footer data-role="footer" data-fullscreen="true" data-position="fixed">
+			<h1>16112492 컴퓨터공학과 이동준</h1>
+		</footer>
+	</section>
+	<section data-role="page" id="gyeongbuk">
+		<header data-role="header">
+			<a href="#main" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ">홈</a>
+			<h1>국내 여행지 추천</h1>
+			<a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">검색</a>
+		</header>
+			<div class="scroll-a">
+				<div class="scroll-b">
+					<ul class="nav">
+						<li class="nav"><a href="sightseeing.html" data-ajax="false" class="ui-btn ui-btn-b nav">관광지</a></li>
+						<li class="nav"><a href="restaurant.html" data-ajax="false" class="ui-btn ui-btn-b nav">유명맛집</a></li>
+						<li class="nav"><a href="lodging.html" data-ajax="false" class="ui-btn ui-btn-b nav">숙소</a></li>
+						<li class="nav"><a href="photospot.html" data-ajax="false" class="ui-btn ui-btn-b nav">사진명소</a></li>
+						<li class="nav"><a href="festival.html" data-ajax="false" class="ui-btn ui-btn-b nav">축제</a></li>
+						<li class="nav"><a href="cafe.html" data-ajax="false" class="ui-btn ui-btn-b nav">카페</a></li>
+						<li class="nav"><a href="activity.html" data-ajax="false" class="ui-btn ui-btn-b nav">액티비티</a></li>
+						<li class="nav"><a href="diblist.html" data-ajax="false" class="ui-btn ui-btn-b nav">찜목록</a></li>
+					</ul>
+				</div>
+			</div>
+		<br/>
+		<br/>
+		<article data-role="content" class="ui-content">
+			<ul data-role="listview" data-inset="true">
+				<li><a href="">경상북도 관광지</a></li>
+				<li><a href="">경상북도 유명맛집</a></li>
+				<li><a href="">경상북도 숙소</a></li>
+				<li><a href="">경상북도 사진명소</a></li>
+				<li><a href="">경상북도 축제</a></li>
+				<li><a href="">경상북도 카페</a></li>
+				<li><a href="">경상북도 액티비티</a></li>
+
+			</ul>
+		</article>
+		<footer data-role="footer" data-fullscreen="true" data-position="fixed">
+			<h1>16112492 컴퓨터공학과 이동준</h1>
+		</footer>
+	</section>
+	<section data-role="page" id="daegu">
+		<header data-role="header">
+			<a href="#main" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ">홈</a>
+			<h1>국내 여행지 추천</h1>
+			<a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">검색</a>
+		</header>
+			<div class="scroll-a">
+				<div class="scroll-b">
+					<ul class="nav">
+						<li class="nav"><a href="sightseeing.html" data-ajax="false" class="ui-btn ui-btn-b nav">관광지</a></li>
+						<li class="nav"><a href="restaurant.html" data-ajax="false" class="ui-btn ui-btn-b nav">유명맛집</a></li>
+						<li class="nav"><a href="lodging.html" data-ajax="false" class="ui-btn ui-btn-b nav">숙소</a></li>
+						<li class="nav"><a href="photospot.html" data-ajax="false" class="ui-btn ui-btn-b nav">사진명소</a></li>
+						<li class="nav"><a href="festival.html" data-ajax="false" class="ui-btn ui-btn-b nav">축제</a></li>
+						<li class="nav"><a href="cafe.html" data-ajax="false" class="ui-btn ui-btn-b nav">카페</a></li>
+						<li class="nav"><a href="activity.html" data-ajax="false" class="ui-btn ui-btn-b nav">액티비티</a></li>
+						<li class="nav"><a href="diblist.html" data-ajax="false" class="ui-btn ui-btn-b nav">찜목록</a></li>
+					</ul>
+				</div>
+			</div>
+		<br/>
+		<br/>
+		<article data-role="content" class="ui-content">
+			<ul data-role="listview" data-inset="true">
+				<li><a href="">대구광역시 관광지</a></li>
+				<li><a href="">대구광역시 유명맛집</a></li>
+				<li><a href="">대구광역시 숙소</a></li>
+				<li><a href="">대구광역시 사진명소</a></li>
+				<li><a href="">대구광역시 축제</a></li>
+				<li><a href="">대구광역시 카페</a></li>
+				<li><a href="">대구광역시 액티비티</a></li>
+			</ul>
+		</article>
+		<footer data-role="footer" data-fullscreen="true" data-position="fixed">
+			<h1>16112492 컴퓨터공학과 이동준</h1>
+		</footer>
+	</section>
+	<section data-role="page" id="gyeongnam">
+		<header data-role="header">
+			<a href="#main" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ">홈</a>
+			<h1>국내 여행지 추천</h1>
+			<a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">검색</a>
+		</header>
+			<div class="scroll-a">
+				<div class="scroll-b">
+					<ul class="nav">
+						<li class="nav"><a href="sightseeing.html" data-ajax="false" class="ui-btn ui-btn-b nav">관광지</a></li>
+						<li class="nav"><a href="restaurant.html" data-ajax="false" class="ui-btn ui-btn-b nav">유명맛집</a></li>
+						<li class="nav"><a href="lodging.html" data-ajax="false" class="ui-btn ui-btn-b nav">숙소</a></li>
+						<li class="nav"><a href="photospot.html" data-ajax="false" class="ui-btn ui-btn-b nav">사진명소</a></li>
+						<li class="nav"><a href="festival.html" data-ajax="false" class="ui-btn ui-btn-b nav">축제</a></li>
+						<li class="nav"><a href="cafe.html" data-ajax="false" class="ui-btn ui-btn-b nav">카페</a></li>
+						<li class="nav"><a href="activity.html" data-ajax="false" class="ui-btn ui-btn-b nav">액티비티</a></li>
+						<li class="nav"><a href="diblist.html" data-ajax="false" class="ui-btn ui-btn-b nav">찜목록</a></li>
+					</ul>
+				</div>
+			</div>
+		<br/>
+		<br/>
+		<article data-role="content" class="ui-content">
+			<ul data-role="listview" data-inset="true">
+				<li><a href="">경상남도 관광지</a></li>
+				<li><a href="">경상남도 유명맛집</a></li>
+				<li><a href="">경상남도 숙소</a></li>
+				<li><a href="">경상남도 사진명소</a></li>
+				<li><a href="">경상남도 축제</a></li>
+				<li><a href="">경상남도 카페</a></li>
+				<li><a href="">경상남도 액티비티</a></li>
+			</ul>
+		</article>
+		<footer data-role="footer" data-fullscreen="true" data-position="fixed">
+			<h1>16112492 컴퓨터공학과 이동준</h1>
+		</footer>
+	</section>
+	<section data-role="page" id="ulsan">
+		<header data-role="header">
+			<a href="#main" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ">홈</a>
+			<h1>국내 여행지 추천</h1>
+			<a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">검색</a>
+		</header>
+			<div class="scroll-a">
+				<div class="scroll-b">
+					<ul class="nav">
+						<li class="nav"><a href="sightseeing.html" data-ajax="false" class="ui-btn ui-btn-b nav">관광지</a></li>
+						<li class="nav"><a href="restaurant.html" data-ajax="false" class="ui-btn ui-btn-b nav">유명맛집</a></li>
+						<li class="nav"><a href="lodging.html" data-ajax="false" class="ui-btn ui-btn-b nav">숙소</a></li>
+						<li class="nav"><a href="photospot.html" data-ajax="false" class="ui-btn ui-btn-b nav">사진명소</a></li>
+						<li class="nav"><a href="festival.html" data-ajax="false" class="ui-btn ui-btn-b nav">축제</a></li>
+						<li class="nav"><a href="cafe.html" data-ajax="false" class="ui-btn ui-btn-b nav">카페</a></li>
+						<li class="nav"><a href="activity.html" data-ajax="false" class="ui-btn ui-btn-b nav">액티비티</a></li>
+						<li class="nav"><a href="diblist.html" data-ajax="false" class="ui-btn ui-btn-b nav">찜목록</a></li>
+					</ul>
+				</div>
+			</div>
+		<br/>
+		<br/>
+		<article data-role="content" class="ui-content">
+			<ul data-role="listview" data-inset="true">
+				<li><a href="">울산광역시 관광지</a></li>
+				<li><a href="">울산광역시 유명맛집</a></li>
+				<li><a href="">울산광역시 숙소</a></li>
+				<li><a href="">울산광역시 사진명소</a></li>
+				<li><a href="">울산광역시 축제</a></li>
+				<li><a href="">울산광역시 카페</a></li>
+				<li><a href="">울산광역시 액티비티</a></li>
+			</ul>
+		</article>
+		<footer data-role="footer" data-fullscreen="true" data-position="fixed">
+			<h1>16112492 컴퓨터공학과 이동준</h1>
+		</footer>
+	</section>
+	<section data-role="page" id="busan">
+		<header data-role="header">
+			<a href="#main" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ">홈</a>
+			<h1>국내 여행지 추천</h1>
+			<a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">검색</a>
+		</header>
+			<div class="scroll-a">
+				<div class="scroll-b">
+					<ul class="nav">
+						<li class="nav"><a href="sightseeing.html" data-ajax="false" class="ui-btn ui-btn-b nav">관광지</a></li>
+						<li class="nav"><a href="restaurant.html" data-ajax="false" class="ui-btn ui-btn-b nav">유명맛집</a></li>
+						<li class="nav"><a href="lodging.html" data-ajax="false" class="ui-btn ui-btn-b nav">숙소</a></li>
+						<li class="nav"><a href="photospot.html" data-ajax="false" class="ui-btn ui-btn-b nav">사진명소</a></li>
+						<li class="nav"><a href="festival.html" data-ajax="false" class="ui-btn ui-btn-b nav">축제</a></li>
+						<li class="nav"><a href="cafe.html" data-ajax="false" class="ui-btn ui-btn-b nav">카페</a></li>
+						<li class="nav"><a href="activity.html" data-ajax="false" class="ui-btn ui-btn-b nav">액티비티</a></li>
+						<li class="nav"><a href="diblist.html" data-ajax="false" class="ui-btn ui-btn-b nav">찜목록</a></li>
+					</ul>
+				</div>
+			</div>
+		<br/>
+		<br/>
+		<article data-role="content" class="ui-content">
+			<ul data-role="listview" data-inset="true">
+				<li><a href="">부산광역시 관광지</a></li>
+				<li><a href="">부산광역시 유명맛집</a></li>
+				<li><a href="">부산광역시 숙소</a></li>
+				<li><a href="">부산광역시 사진명소</a></li>
+				<li><a href="">부산광역시 축제</a></li>
+				<li><a href="">부산광역시 카페</a></li>
+				<li><a href="">부산광역시 액티비티</a></li>
+			</ul>
+		</article>
+		<footer data-role="footer" data-fullscreen="true" data-position="fixed">
+			<h1>16112492 컴퓨터공학과 이동준</h1>
+		</footer>
+	</section>
+	<section data-role="page" id="jeonbuk">
+		<header data-role="header">
+			<a href="#main" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ">홈</a>
+			<h1>국내 여행지 추천</h1>
+			<a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">검색</a>
+		</header>
+			<div class="scroll-a">
+				<div class="scroll-b">
+					<ul class="nav">
+						<li class="nav"><a href="sightseeing.html" data-ajax="false" class="ui-btn ui-btn-b nav">관광지</a></li>
+						<li class="nav"><a href="restaurant.html" data-ajax="false" class="ui-btn ui-btn-b nav">유명맛집</a></li>
+						<li class="nav"><a href="lodging.html" data-ajax="false" class="ui-btn ui-btn-b nav">숙소</a></li>
+						<li class="nav"><a href="photospot.html" data-ajax="false" class="ui-btn ui-btn-b nav">사진명소</a></li>
+						<li class="nav"><a href="festival.html" data-ajax="false" class="ui-btn ui-btn-b nav">축제</a></li>
+						<li class="nav"><a href="cafe.html" data-ajax="false" class="ui-btn ui-btn-b nav">카페</a></li>
+						<li class="nav"><a href="activity.html" data-ajax="false" class="ui-btn ui-btn-b nav">액티비티</a></li>
+						<li class="nav"><a href="diblist.html" data-ajax="false" class="ui-btn ui-btn-b nav">찜목록</a></li>
+					</ul>
+				</div>
+			</div>
+		<br/>
+		<br/>
+		<article data-role="content" class="ui-content">
+			<ul data-role="listview" data-inset="true">
+				<li><a href="">전라북도 관광지</a></li>
+				<li><a href="">전라북도 유명맛집</a></li>
+				<li><a href="">전라북도 숙소</a></li>
+				<li><a href="">전라북도 사진명소</a></li>
+				<li><a href="">전라북도 축제</a></li>
+				<li><a href="">전라북도 카페</a></li>
+				<li><a href="">전라북도 액티비티</a></li>
+			</ul>
+		</article>
+		<footer data-role="footer" data-fullscreen="true" data-position="fixed">
+			<h1>16112492 컴퓨터공학과 이동준</h1>
+		</footer>
+	</section>
+	<section data-role="page" id="gwangju">
+		<header data-role="header">
+			<a href="#main" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ">홈</a>
+			<h1>국내 여행지 추천</h1>
+			<a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">검색</a>
+		</header>
+			<div class="scroll-a">
+				<div class="scroll-b">
+					<ul class="nav">
+						<li class="nav"><a href="sightseeing.html" data-ajax="false" class="ui-btn ui-btn-b nav">관광지</a></li>
+						<li class="nav"><a href="restaurant.html" data-ajax="false" class="ui-btn ui-btn-b nav">유명맛집</a></li>
+						<li class="nav"><a href="lodging.html" data-ajax="false" class="ui-btn ui-btn-b nav">숙소</a></li>
+						<li class="nav"><a href="photospot.html" data-ajax="false" class="ui-btn ui-btn-b nav">사진명소</a></li>
+						<li class="nav"><a href="festival.html" data-ajax="false" class="ui-btn ui-btn-b nav">축제</a></li>
+						<li class="nav"><a href="cafe.html" data-ajax="false" class="ui-btn ui-btn-b nav">카페</a></li>
+						<li class="nav"><a href="activity.html" data-ajax="false" class="ui-btn ui-btn-b nav">액티비티</a></li>
+						<li class="nav"><a href="diblist.html" data-ajax="false" class="ui-btn ui-btn-b nav">찜목록</a></li>
+					</ul>
+				</div>
+			</div>
+		<br/>
+		<br/>
+		<article data-role="content" class="ui-content">
+			<ul data-role="listview" data-inset="true">
+				<li><a href="">광주광역시 관광지</a></li>
+				<li><a href="">광주광역시 유명맛집</a></li>
+				<li><a href="">광주광역시 숙소</a></li>
+				<li><a href="">광주광역시 사진명소</a></li>
+				<li><a href="">광주광역시 축제</a></li>
+				<li><a href="">광주광역시 카페</a></li>
+				<li><a href="">광주광역시 액티비티</a></li>
+			</ul>
+		</article>
+		<footer data-role="footer" data-fullscreen="true" data-position="fixed">
+			<h1>16112492 컴퓨터공학과 이동준</h1>
+		</footer>
+	</section>
+	<section data-role="page" id="jeonnam">
+		<header data-role="header">
+			<a href="#main" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ">홈</a>
+			<h1>국내 여행지 추천</h1>
+			<a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">검색</a>
+		</header>
+			<div class="scroll-a">
+				<div class="scroll-b">
+					<ul class="nav">
+						<li class="nav"><a href="sightseeing.html" data-ajax="false" class="ui-btn ui-btn-b nav">관광지</a></li>
+						<li class="nav"><a href="restaurant.html" data-ajax="false" class="ui-btn ui-btn-b nav">유명맛집</a></li>
+						<li class="nav"><a href="lodging.html" data-ajax="false" class="ui-btn ui-btn-b nav">숙소</a></li>
+						<li class="nav"><a href="photospot.html" data-ajax="false" class="ui-btn ui-btn-b nav">사진명소</a></li>
+						<li class="nav"><a href="festival.html" data-ajax="false" class="ui-btn ui-btn-b nav">축제</a></li>
+						<li class="nav"><a href="cafe.html" data-ajax="false" class="ui-btn ui-btn-b nav">카페</a></li>
+						<li class="nav"><a href="activity.html" data-ajax="false" class="ui-btn ui-btn-b nav">액티비티</a></li>
+						<li class="nav"><a href="diblist.html" data-ajax="false" class="ui-btn ui-btn-b nav">찜목록</a></li>
+					</ul>
+				</div>
+			</div>
+		<br/>
+		<br/>
+		<article data-role="content" class="ui-content">
+			<ul data-role="listview" data-inset="true">
+				<li><a href="">전라남도 관광지</a></li>
+				<li><a href="">전라남도 유명맛집</a></li>
+				<li><a href="">전라남도 숙소</a></li>
+				<li><a href="">전라남도 사진명소</a></li>
+				<li><a href="">전라남도 축제</a></li>
+				<li><a href="">전라남도 카페</a></li>
+				<li><a href="">전라남도 액티비티</a></li>
+			</ul>
+		</article>
+		<footer data-role="footer" data-fullscreen="true" data-position="fixed">
+			<h1>16112492 컴퓨터공학과 이동준</h1>
+		</footer>
+	</section>
+	<section data-role="page" id="jeju">
+		<header data-role="header">
+			<a href="#main" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ">홈</a>
+			<h1>국내 여행지 추천</h1>
+			<a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">검색</a>
+		</header>
+			<div class="scroll-a">
+				<div class="scroll-b">
+					<ul class="nav">
+						<li class="nav"><a href="sightseeing.html" data-ajax="false" class="ui-btn ui-btn-b nav">관광지</a></li>
+						<li class="nav"><a href="restaurant.html" data-ajax="false" class="ui-btn ui-btn-b nav">유명맛집</a></li>
+						<li class="nav"><a href="lodging.html" data-ajax="false" class="ui-btn ui-btn-b nav">숙소</a></li>
+						<li class="nav"><a href="photospot.html" data-ajax="false" class="ui-btn ui-btn-b nav">사진명소</a></li>
+						<li class="nav"><a href="festival.html" data-ajax="false" class="ui-btn ui-btn-b nav">축제</a></li>
+						<li class="nav"><a href="cafe.html" data-ajax="false" class="ui-btn ui-btn-b nav">카페</a></li>
+						<li class="nav"><a href="activity.html" data-ajax="false" class="ui-btn ui-btn-b nav">액티비티</a></li>
+						<li class="nav"><a href="diblist.html" data-ajax="false" class="ui-btn ui-btn-b nav">찜목록</a></li>
+					</ul>
+				</div>
+			</div>
+		<br/>
+		<br/>
+		<article data-role="content" class="ui-content">
+			<ul data-role="listview" data-inset="true">
+				<li><a href="">제주특별자치도 관광지</a></li>
+				<li><a href="">제주특별자치도 유명맛집</a></li>
+				<li><a href="">제주특별자치도 숙소</a></li>
+				<li><a href="">제주특별자치도 사진명소</a></li>
+				<li><a href="">제주특별자치도 축제</a></li>
+				<li><a href="">제주특별자치도 카페</a></li>
+				<li><a href="">제주특별자치도 액티비티</a></li>
+			</ul>
+		</article>
+		<footer data-role="footer" data-fullscreen="true" data-position="fixed">
+			<h1>16112492 컴퓨터공학과 이동준</h1>
+		</footer>
+	</section>
+</body>
+
+</html>

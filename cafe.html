@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="jquery.mobile.external-png-1.4.5.css">
+   <link rel="stylesheet" href="jquery.mobile.external-png-1.4.5.min.css">
+   <link rel="stylesheet" href="jquery.mobile.icons-1.4.5.css">
+   <link rel="stylesheet" href="jquery.mobile.icons-1.4.5.min.css">
+   <link rel="stylesheet" href="jquery.mobile.inline-png-1.4.5.css">
+   <link rel="stylesheet" href="jquery.mobile.inline-png-1.4.5.min.css">
+   <link rel="stylesheet" href="jquery.mobile.inline-svg-1.4.5.css">
+   <link rel="stylesheet" href="jquery.mobile.inline-svg-1.4.5.min.css">
+   <link rel="stylesheet" href="jquery.mobile.structure-1.4.5.css">
+   <link rel="stylesheet" href="jquery.mobile.structure-1.4.5.min.css">
+   <script src="jquery-1.11.3.min.js"></script>
+   <script src="jquery.mobile-1.4.5.js"></script>
+<link rel="stylesheet" type="text/css" href="nav.css">
+<link rel="stylesheet" type="text/css" href="imageslide.css">
+<link rel="stylesheet" type="text/css" href="dibs.css">
+<link rel="stylesheet" type="text/css" href="stars.css">
+<script src="javascript.js"></script>
+<script src="star.js"></script>
+<script src="dibs.js"></script>
+<body onload="init()">
+	<section id="main" data-role="page" data-theme="a">
+		<header data-role="header">
+			<a href="index.html" data-ajax="false" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ">홈</a>
+			<h1>국내 여행지 추천</h1>
+			<a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">검색</a>
+		</header>
+			<div class="scroll-a">
+				<div class="scroll-b">
+					<ul class="nav">
+						<li class="nav"><a href="sightseeing.html" data-ajax="false" class="ui-btn ui-btn-b nav">관광지</a></li>
+						<li class="nav"><a href="restaurant.html" data-ajax="false" class="ui-btn ui-btn-b nav">유명맛집</a></li>
+						<li class="nav"><a href="lodging.html" data-ajax="false" class="ui-btn ui-btn-b nav">숙소</a></li>
+						<li class="nav"><a href="photospot.html" data-ajax="false" class="ui-btn ui-btn-b nav">사진명소</a></li>
+						<li class="nav"><a href="festival.html" data-ajax="false" class="ui-btn ui-btn-b nav">축제</a></li>
+						<li class="nav"><a href="cafe.html" data-ajax="false" class="ui-btn ui-btn-b nav">카페</a></li>
+						<li class="nav"><a href="activity.html" data-ajax="false" class="ui-btn ui-btn-b nav">액티비티</a></li>
+						<li class="nav"><a href="diblist.html" data-ajax="false" class="ui-btn ui-btn-b nav">찜목록</a></li>
+					</ul>
+				</div>
+			</div>
+		<br/>
+		<br/>
+		<article data-role="content" class="ui-content">
+			<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide21">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="fritz1.jpg" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide21">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="fritz2.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide21">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="fritz3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide21">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="fritz4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides21(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides21(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot21 active" onclick="currentSlide21(1)"></span> 
+  					<span class="dot21" onclick="currentSlide21(2)"></span> 
+	  				<span class="dot21" onclick="currentSlide21(3)"></span> 
+	  				<span class="dot21" onclick="currentSlide21(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>프릳츠 도화점
+					<span class="star Star21" style="margin: 0 5px;">
+        			<a href="#" onclick="star21(1)">★</a>
+        			<a href="#" onclick="star21(2)">★</a>
+        			<a href="#" onclick="star21(3)">★</a>
+	        		<a href="#" onclick="star21(4)">★</a>
+    			    <a href="#" onclick="star21(5)">★</a>
+    				</span>
+    			</h2>
+
+				</p>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>
+					커피숍/커피 전문점<br><br>
+					공덕역 카페 프릳츠의 맛있는 베이커리 디저트 커피<br><br>
+					아늑함 · 캐주얼 · 모임에 좋은 장소<br><br>
+					1층과 2층은 커피와 베이커리를 판매하고 있으며, 평일에도 사람들로 북적이는 뉴트로 감성 카페이다. 카페 프릳츠는 원두부터 컵, 공책 등을 제품을 브랜드화해서 판매하고 있으며, 패키징이 독특해 많은 인기를 얻고 있다. <br><br>공동창업자 중 한명이 한국 바리스타 챔피언십 우승자로, 인증된 커피를 맛볼 수 있다. 너무 달지 않고 커피와 찰떡 궁합인 베이커리류도 많은 사랑을 받고 있다. 
+				</p>
+				
+				<p style="margin:0 15px;">
+					<input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+					<a href="#myPopup41" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">영업시간</a>&nbsp;<input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">02-3275-2045 &nbsp; 
+					<a href="http://fritz.co.kr/" target="_blank" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline"></a>홈페이지
+				</p>
+				<div data-role="popup" id="myPopup41">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">평일</li>
+						<li>08:00~23:00</li>
+						<li data-role="list-divider"><span style="color:red;">주말</span></li>
+						<li><span style="color:red;">10:00~23:00</li>
+						<li data-role="list-divider"><span style="color:red;">공휴일</span></li>
+						<li><span style="color:red;">10:00~23:00</span></li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup42">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">상세정보</li>
+						<li>무선 인터넷, 반려동물 동반</li>
+						<li data-role="list-divider"><span style="color:red;">주의</span></li>
+						<li><span style="color:red;">주차불가, 명절 휴무</span></li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup43">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">메뉴</li>
+						<li>에스프레소: 4,400원</li>
+						<li>아메리카노: 4,400원</li>
+						<li>카푸치노  : 4,800원</li>
+						<li>카페라떼  : 4,800원</li>
+						<li>플랫화이트: 4,800원</li>
+					</ul>
+				</div>
+				
+ 				<p style="margin: 0 15px;">
+ 					<input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">서울 마포구 새창로2길 17<br>
+ 					<input type="button" data-icon="bars" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup42" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">상세정보</a>&nbsp;
+ 					<input type="button" data-icon="bullets" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup43" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">메뉴</a>
+ 				</p>
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b><img class="fritzDibs dibs" name="프릳츠" onclick="fritzDibs()" src="nodibs.png"></p>
+				<br><br>
+
+				<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide22">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="layered1.jpg" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide22">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="layered2.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide22">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="layered3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide22">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="layered4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides22(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides22(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot22 active" onclick="currentSlide22(1)"></span> 
+  					<span class="dot22" onclick="currentSlide22(2)"></span> 
+	  				<span class="dot22" onclick="currentSlide22(3)"></span> 
+	  				<span class="dot22" onclick="currentSlide22(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>레이어드 연남
+					<span class="star Star22" style="margin: 0 5px;">
+        			<a href="#" onclick="star22(1)">★</a>
+        			<a href="#" onclick="star22(2)">★</a>
+        			<a href="#" onclick="star22(3)">★</a>
+	        		<a href="#" onclick="star22(4)">★</a>
+    			    <a href="#" onclick="star22(5)">★</a>
+    				</span>
+    			</h2>
+
+				</p>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>
+					카페, 디저트<br><br>
+					SNS에서 자주 볼 수 있는 연남동 '카페 레이어드'이다. 많은 빵순이들의 성지로 소개된 '레이어드'는 빵지순례의 길, 스콘 맛집으로 잘 알려져있다.<br><br>브라우니, 케이크, 스콘 등 다양한 종류의 디저트가 준비되어 있다. 또, SNS용 사진을 찍기 좋게 디저트를 진열해 인기 많은 카페로 꼽히는 이유를 단번에 알아 차릴 수 있다. <br><br>
+					1층은 디저트와 커피를 판매하고, 2,3층은 테이블이 준비되어 있지만 평일에 가도 자리 잡기가 쉽지 않다. 대표 메뉴로는 영국식 스콘과 귀여운 강아지 크림이 올라간 레드벨벳이 있다.
+				</p>
+				
+				<p style="margin:0 15px;">
+					<input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+					<a href="#myPopup44" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">영업시간</a>&nbsp; 
+					<a href="https://www.instagram.com/cafe_layered/" target="_blank" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline"></a>홈페이지
+				</p>
+				<div data-role="popup" id="myPopup44">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">매일</li>
+						<li>10:00~22:00</li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup45">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider"><span style="color:red;">주의</span></li>
+						<li><span style="color:red;">배달이 안 됨</span></li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup46">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">메뉴</li>
+						<li>에스프레소: 4,500원</li>
+						<li>에스프레소 콘파나: 5,000원</li>
+						<li>아메리카노  : 5,000원</li>
+						<li>카페라떼  : 6,000원</li>
+						<li>플랫화이트: 6,000원</li>
+					</ul>
+				</div>
+				
+ 				<p style="margin: 0 15px;">
+ 					<input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">서울 마포구 성미산로 161-4<br>
+ 					<input type="button" data-icon="bars" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup45" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">상세정보</a>&nbsp;
+ 					<input type="button" data-icon="bullets" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup46" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">메뉴</a>
+ 				</p>
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b><img class="layeredDibs dibs" name="레이어드" onclick="layeredDibs()" src="nodibs.png"></p>
+				<br><br>
+
+				<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide23">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="dongyang1.png" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide23">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="dongyang2.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide23">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="dongyang3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide23">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="dongyang4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides23(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides23(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot23 active" onclick="currentSlide23(1)"></span> 
+  					<span class="dot23" onclick="currentSlide23(2)"></span> 
+	  				<span class="dot23" onclick="currentSlide23(3)"></span> 
+	  				<span class="dot23" onclick="currentSlide23(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>동백양과점
+					<span class="star Star23" style="margin: 0 5px;">
+        			<a href="#" onclick="star23(1)">★</a>
+        			<a href="#" onclick="star23(2)">★</a>
+        			<a href="#" onclick="star23(3)">★</a>
+	        		<a href="#" onclick="star23(4)">★</a>
+    			    <a href="#" onclick="star23(5)">★</a>
+    				</span>
+    			</h2>
+
+				</p>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>
+					커피숍/커피 전문점<br><br>
+					KBS 주말 예능프로그램 '슈퍼맨이 돌아왔다'에서 축구선수 박주호의 자녀 건후와 나은이가 광희와 함께 방문해 화제를 모은 디저트 카페 '동백양과점'이다.<br><br>웨이팅없이는 먹을 수 없다는 수플레케이크와 다양한 음료를 판매하고 있다. '동백 양과점'이라는 이름에서 전해지듯, 가게 분위기와 인테리어에서 옛 서울을 간접 체험할 수 있다.<br><br>
+					대표 메뉴로는 딸기 수플레 팬케이크가 있으며, 입에 넣는 순간 녹아버리는 수플레 케이크를 맛볼 수 있다.  최근, 연남동에 2호점이 새로 오픈해 SNS상에서 화제를 모으고 있다.
+				</p>
+				
+				<p style="margin:0 15px;">
+					<input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+					<a href="#myPopup47" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">영업시간</a>&nbsp; <input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">02-744-1224 &nbsp; 
+				</p>
+				<div data-role="popup" id="myPopup47">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">매일</li>
+						<li>10:00~23:00</li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup48">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">메뉴</li>
+						<li>익선1937 드립커피: 7,500원</li>
+						<li>동백아가씨 드립커피: 8,000원</li>
+						<li>드립라떼  : 8,500원</li>
+						<li>크림커피(오렌지/아몬드모카자바/코코넛버터) : 8,500원</li>
+						<li>티 (카프레디엄/트하이종 비잔틴/말린 장미차): 8,000원</li>
+					</ul>
+				</div>
+				
+ 				<p style="margin: 0 15px;">
+ 					<input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">서울특별시 종로구 수표로28길 17-24<br>
+ 					<input type="button" data-icon="bullets" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup48" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">메뉴</a>
+ 				</p>
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b><img class="dongyangDibs dibs" name="동백양과점" onclick="dongyangDibs()" src="nodibs.png"></p>
+				<br><br>
+
+				<div style="width:100%;">
+
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide24">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="namusairo1.jpg" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide24">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="namusairo2.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide24">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="namusairo3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide24">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="namusairo4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides24(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides24(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot24 active" onclick="currentSlide24(1)"></span> 
+  					<span class="dot24" onclick="currentSlide24(2)"></span> 
+	  				<span class="dot24" onclick="currentSlide24(3)"></span> 
+	  				<span class="dot24" onclick="currentSlide24(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>나무사이로 내자점
+					<span class="star Star24" style="margin: 0 5px;">
+        			<a href="#" onclick="star24(1)">★</a>
+        			<a href="#" onclick="star24(2)">★</a>
+        			<a href="#" onclick="star24(3)">★</a>
+	        		<a href="#" onclick="star24(4)">★</a>
+    			    <a href="#" onclick="star24(5)">★</a>
+    				</span>
+    			</h2>
+
+				</p>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>
+					커피숍/커피 전문점<br><br>
+				</p>
+				
+				<p style="margin:0 15px;">
+					<input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+					<a href="#myPopup49" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">영업시간
+					</a>&nbsp; <input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">070-7590-0885 &nbsp; 
+					<a href="http://www.namusairo.com/" target="_blank" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline"></a>홈페이지
+				</p>
+				<div data-role="popup" id="myPopup49">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider"><span style="color:red;">주말, 공휴일</span></li>
+						<li>10:00~22:00</li>
+						<li data-role="list-divider">평일</li>
+						<li>10:00~22:00</li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup50">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">메뉴</li>
+						<li>에스프레소: 5,000원</li>
+						<li>아메리카노: 5,000원</li>
+						<li>카페라떼  : 6,000원</li>
+						<li>콩가루 아이스크림: 6,000원</li>
+					</ul>
+				</div>
+				
+ 				<p style="margin: 0 15px;">
+ 					<input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">서울특별시 종로구 사직동 사직로8길 21<br>
+ 					<input type="button" data-icon="bullets" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup50" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">메뉴</a>
+ 				</p>
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b><img class="namusairoDibs dibs" name="나무사이로" onclick="namusairoDibs()" src="nodibs.png"></p>
+				<br><br>
+		</article>
+		<footer data-role="footer" data-fullscreen="true" data-position="fixed">
+			<h1>16112492 컴퓨터공학과 이동준</h1>
+		</footer>
+</body>
+</html>

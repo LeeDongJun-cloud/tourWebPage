@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="jquery.mobile.external-png-1.4.5.css">
+   <link rel="stylesheet" href="jquery.mobile.external-png-1.4.5.min.css">
+   <link rel="stylesheet" href="jquery.mobile.icons-1.4.5.css">
+   <link rel="stylesheet" href="jquery.mobile.icons-1.4.5.min.css">
+   <link rel="stylesheet" href="jquery.mobile.inline-png-1.4.5.css">
+   <link rel="stylesheet" href="jquery.mobile.inline-png-1.4.5.min.css">
+   <link rel="stylesheet" href="jquery.mobile.inline-svg-1.4.5.css">
+   <link rel="stylesheet" href="jquery.mobile.inline-svg-1.4.5.min.css">
+   <link rel="stylesheet" href="jquery.mobile.structure-1.4.5.css">
+   <link rel="stylesheet" href="jquery.mobile.structure-1.4.5.min.css">
+   <script src="jquery-1.11.3.min.js"></script>
+   <script src="jquery.mobile-1.4.5.js"></script>
+<link rel="stylesheet" type="text/css" href="nav.css">
+<link rel="stylesheet" type="text/css" href="imageslide.css">
+<link rel="stylesheet" type="text/css" href="dibs.css">
+<link rel="stylesheet" type="text/css" href="stars.css">
+<script src="javascript.js"></script>
+<script src="star.js"></script>
+<script src="dibs.js"></script>
+<body onload="init()">
+	<section id="main" data-role="page" data-theme="a">
+		<header data-role="header">
+			<a href="index.html" data-ajax="false" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ">홈</a>
+			<h1>국내 여행지 추천</h1>
+			<a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">검색</a>
+		</header>
+			<div class="scroll-a">
+				<div class="scroll-b">
+					<ul class="nav">
+						<li class="nav"><a href="sightseeing.html" data-ajax="false" class="ui-btn ui-btn-b nav">관광지</a></li>
+						<li class="nav"><a href="restaurant.html" data-ajax="false" class="ui-btn ui-btn-b nav">유명맛집</a></li>
+						<li class="nav"><a href="lodging.html" data-ajax="false" class="ui-btn ui-btn-b nav">숙소</a></li>
+						<li class="nav"><a href="photospot.html" data-ajax="false" class="ui-btn ui-btn-b nav">사진명소</a></li>
+						<li class="nav"><a href="festival.html" data-ajax="false" class="ui-btn ui-btn-b nav">축제</a></li>
+						<li class="nav"><a href="cafe.html" data-ajax="false" class="ui-btn ui-btn-b nav">카페</a></li>
+						<li class="nav"><a href="activity.html" data-ajax="false" class="ui-btn ui-btn-b nav">액티비티</a></li>
+						<li class="nav"><a href="diblist.html" data-ajax="false" class="ui-btn ui-btn-b nav">찜목록</a></li>
+					</ul>
+				</div>
+			</div>
+		<br/>
+		<br/>
+		<article data-role="content" class="ui-content">
+			<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide25">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="cart1.png" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide25">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="cart2.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide25">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="cart3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide25">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="cart4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides25(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides25(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot25 active" onclick="currentSlide25(1)"></span> 
+  					<span class="dot25" onclick="currentSlide25(2)"></span> 
+	  				<span class="dot25" onclick="currentSlide25(3)"></span> 
+	  				<span class="dot25" onclick="currentSlide25(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>잠실 카트체험장
+					<span class="star Star25" style="margin: 0 5px;">
+        			<a href="#" onclick="star25(1)">★</a>
+        			<a href="#" onclick="star25(2)">★</a>
+        			<a href="#" onclick="star25(3)">★</a>
+	        		<a href="#" onclick="star25(4)">★</a>
+    			    <a href="#" onclick="star25(5)">★</a>
+    				</span>
+    			</h2>
+
+				</p>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>
+					카트장<br><br>
+					잠실카트체험장은 잠실에 위치한 카트 체험장으로 남녀노소 누구나 운전면허가 없어도 모터스포츠를 통한 건전한 취미생활을 즐길 수 있는 곳이다. 예능 프로그램<우리 결혼했어요> 촬영지로도 이용됐었다. 매주 월요일, 행사 및 우천 시 휴무한다. 공휴일에는 정상적으로 영업한다.
+				</p>
+				
+				<p style="margin:0 15px;">
+					<input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+					<a href="#myPopup52" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">영업시간
+					</a>&nbsp; <input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">02-420-3886 &nbsp; 
+					<a href="http://www.birel.kr" target="_blank" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline"></a>홈페이지
+				</p>
+				<div data-role="popup" id="myPopup52">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider"><span style="color:red;">휴무</span></li>
+						<li><span style="color:red;">월요일</span></li>
+						<li data-role="list-divider">매일</li>
+						<li>10:00~18:00</li>
+					</ul>
+				</div>
+ 				<p style="margin: 0 15px;">
+ 					<input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">서울특별시 송파구 잠실2동 10<br>
+ 				</p>
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b><img class="cartDibs dibs" name="카트체험장" onclick="cartDibs()" src="nodibs.png"></p>
+				<br><br>
+				</div>
+
+				<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide26">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="lotteworld1.jpg" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide26">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="lotteworld2.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide26">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="lotteworld3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide26">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="lotteworld4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides26(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides26(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot26 active" onclick="currentSlide26(1)"></span> 
+  					<span class="dot26" onclick="currentSlide26(2)"></span> 
+	  				<span class="dot26" onclick="currentSlide26(3)"></span> 
+	  				<span class="dot26" onclick="currentSlide26(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>롯데월드
+					<span class="star Star26" style="margin: 0 5px;">
+        			<a href="#" onclick="star26(1)">★</a>
+        			<a href="#" onclick="star26(2)">★</a>
+        			<a href="#" onclick="star26(3)">★</a>
+	        		<a href="#" onclick="star26(4)">★</a>
+    			    <a href="#" onclick="star26(5)">★</a>
+    				</span>
+    			</h2>
+
+				</p>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>
+					테마파크<br><br>
+					롯데월드는 대한민국 서울특별시 송파구 올림픽로 240에 위치한 테마파크이다. 롯데그룹의 계열사인 호텔롯데 운영월드 사업부. 놀이시설은 실내의 롯데월드 어드벤처와 야외의 매직아일랜드가 운영되고 있고, 민속박물관, 아이스링크, 백화점, 마트, 호텔이 포함된다.
+				</p>
+
+				<p style="margin:0 15px;">
+					<input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+					<a href="#myPopup53" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">영업시간
+					</a>&nbsp; <input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">1661-2000 &nbsp; 
+					<a href="https://adventure.lotteworld.com/" target="_blank" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline"></a>홈페이지
+				</p>
+				
+				<div data-role="popup" id="myPopup53">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">영업시간</li>
+						<li>월요일 09:30 ~ 22:00</li>
+						<li>화요일 09:30 ~ 22:00</li>
+						<li>수요일 09:30 ~ 22:00</li>
+						<li>목요일 09:30 ~ 22:00</li>
+						<li>금요일 09:30 ~ 23:00</li>
+						<li>토요일 09:30 ~ 23:00</li>
+						<li data-role="list-divider"><span style="color: red;">휴무</span></li>
+						<li>매주 일요일</li>
+						<li data-role="list-divider">개장기간</li>
+						<li>연중무휴</li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup54">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">성인</li>
+						<li>종일(파크이용권) : 56,000원</li>
+						<li>After4(파크이용권) : 45,000원</li>
+						<li data-role="list-divider">청소년</li>
+						<li>종일(파크이용권) : 50,000원</li>
+						<li>After4(파크이용권) : 40,000원</li>
+						<li data-role="list-divider">어린이</li>
+						<li>종일(파크이용권) : 46,000원</li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup55">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">추가정보</li>
+						<li>주차공간</li>
+						<li>예약가능</li>
+						<li>유아시설(놀이방)</li>
+					</ul>
+				</div>
+ 				<p style="margin: 0 15px;">
+ 					<input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">서울특별시 송파구 잠실동 올림픽로 240<br>
+ 				</p>
+ 				<p style="margin: 0 15px;">
+ 				<input type="button" data-icon="bars" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup54" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">이용요금</a>
+ 					<input type="button" data-icon="bullets" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup55" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">추가정보</a>
+ 				</p>
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b><img class="lotteworldDibs dibs" name="롯데월드" onclick="lotteworldDibs()" src="nodibs.png"></p>
+				<br><br>
+				</div>
+
+				<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide27">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="gbboat1.jpg" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide27">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="gbboat2.png" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide27">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="gbboat3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide27">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="gbboat4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides27(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides27(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot27 active" onclick="currentSlide27(1)"></span> 
+  					<span class="dot27" onclick="currentSlide27(2)"></span> 
+	  				<span class="dot27" onclick="currentSlide27(3)"></span> 
+	  				<span class="dot27" onclick="currentSlide27(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>한강 세빛섬 수상레저체험
+					<span class="star Star27" style="margin: 0 5px;">
+        			<a href="#" onclick="star27(1)">★</a>
+        			<a href="#" onclick="star27(2)">★</a>
+        			<a href="#" onclick="star27(3)">★</a>
+	        		<a href="#" onclick="star27(4)">★</a>
+    			    <a href="#" onclick="star27(5)">★</a>
+    				</span>
+    			</h2>
+
+				</p>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>
+					수상레저체험<br><br>
+					세계 최초 수상 문화 공간, 반포 세빛섬에 위치한 골든블루마리나는 최고의 전문가들이 선보이는 다양한 프로그램과 드넓은 자연을 조망할 수 있는 한강의 혜택을 모두 담아 여유롭고 프라이빗한 일상을 선사합니다. 북쪽으로 남산 타워를 바라보며 남쪽으로 곧게 뻗은 반포대교 너머의 찬란한 달빛무지개분수는 기네스북에 등재된 ‘세계에서 가장 긴 교량 분수’로 이국적인 분위기를 더해줍니다. 화려한 네온사인과 LED 조명으로 낮과 밤이 색다른 세빛섬 골든블루마리나에서 가장 여유롭고 특별한 휴식의 시간이 되시길 바랍니다.
+				</p>
+
+				<p style="margin:0 15px;">
+					<input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+					<a href="#myPopup56" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">영업시간
+					</a>&nbsp; <input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">02-599-0900 &nbsp; 
+					<a href="http://www.gbboat.com/kor/flight/flight.php" target="_blank" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline"></a>홈페이지
+				</p>
+				
+				<div data-role="popup" id="myPopup56">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">평일</li>
+						<li>09:00 ~ 22:00</li>
+						<li data-role="list-divider">주말</li>
+						<li>09:00 ~ 22:00</li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup57">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">이용요금</li>
+						<li>레인보우브릿지요트투어(60분/1인) : 19,800원</li>
+						<li>리무진호 정기운항(30분/1인) : 20,000원</li>
+						<li>프린세스 요트 전체대여(30분) : 350,000원</li>
+						<li>씨레이 요트 전체대여(30분) : 250,000원</li>
+						<li>휄리 보트 전체대여(15분) : 60,000원</li>
+						<li>신데렐라 요트(60분/1인) : 20,000원</li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup58">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">추가정보</li>
+						<li>단체석</li>
+						<li>주차</li>
+						<li>예약</li>
+					</ul>
+				</div>
+ 				<p style="margin: 0 15px;">
+ 					<input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">서울특별시 서초구 반포2동 올림픽대로 2085-14 골든블루마리나<br>
+ 				</p>
+ 				<p style="margin: 0 15px;">
+ 				<input type="button" data-icon="bars" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup57" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">이용요금</a>
+ 					<input type="button" data-icon="bullets" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup58" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">추가정보</a>
+ 				</p>
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b><img class="gbboatDibs dibs" name="수상레저체험" onclick="gbboatDibs()" src="nodibs.png"></p>
+				<br><br>
+				</div>
+
+				<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide28">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="cable1.jpg" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide28">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="cable2.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide28">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="cable3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide28">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="cable4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides28(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides28(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot28 active" onclick="currentSlide28(1)"></span> 
+  					<span class="dot28" onclick="currentSlide28(2)"></span> 
+	  				<span class="dot28" onclick="currentSlide28(3)"></span> 
+	  				<span class="dot28" onclick="currentSlide28(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>남산 케이블카
+					<span class="star Star28" style="margin: 0 5px;">
+        			<a href="#" onclick="star28(1)">★</a>
+        			<a href="#" onclick="star28(2)">★</a>
+        			<a href="#" onclick="star28(3)">★</a>
+	        		<a href="#" onclick="star28(4)">★</a>
+    			    <a href="#" onclick="star28(5)">★</a>
+    				</span>
+    			</h2>
+
+				</p>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>
+					서울특별시의 산악 케이블카<br><br>
+					남산 케이블카 또는 남산 삭도는 서울특별시 중구 회현동의 승강장과 예장동 남산 정상 서울타워 부근에 위치한 승강장 사이를 운행하는 케이블카 구간을 말한다. 대한민국 최초의 여객용 케이블카로,1962년 5월 12일 운행을 개시하였으며, 한국삭도공업주식회사에서 운영하고 있다.
+				</p>
+
+				<p style="margin:0 15px;">
+					<input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+					<a href="#myPopup59" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">영업시간
+					</a>&nbsp; <input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">02-753-2403 &nbsp; 
+					<a href="http://www.cablecar.co.kr/chn/" target="_blank" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline"></a>홈페이지
+				</p>
+				
+				<div data-role="popup" id="myPopup59">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">영업시간</li>
+						<li>10:00 ~ 23:00</li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup60">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">대인</li>
+						<li>왕복 : 9,500원</li>
+						<li>왕복 (단체) : 8,000원</li>
+						<li>편도 : 7,000원</li>
+						<li data-role="list-divider">소인</li>
+						<li>왕복 : 6,500원</li>
+						<li>편도 : 4,000원</li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup61">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">추가정보</li>
+						<li>주차</li>
+					</ul>
+				</div>
+ 				<p style="margin: 0 15px;">
+ 					<input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">서울특별시 중구 명동 소파로 83<br>
+ 				</p>
+ 				<p style="margin: 0 15px;">
+ 				<input type="button" data-icon="bars" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup60" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">이용요금</a>
+ 					<input type="button" data-icon="bullets" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup61" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">추가정보</a>
+ 				</p>
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b><img class="cableDibs dibs" name="케이블카" onclick="cableDibs()" src="nodibs.png"></p>
+				<br><br>
+				</div>
+		</article>
+		<footer data-role="footer" data-fullscreen="true" data-position="fixed">
+			<h1>16112492 컴퓨터공학과 이동준</h1>
+		</footer>
+</body>
+</html>

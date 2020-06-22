@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="jquery.mobile.external-png-1.4.5.css">
+   <link rel="stylesheet" href="jquery.mobile.external-png-1.4.5.min.css">
+   <link rel="stylesheet" href="jquery.mobile.icons-1.4.5.css">
+   <link rel="stylesheet" href="jquery.mobile.icons-1.4.5.min.css">
+   <link rel="stylesheet" href="jquery.mobile.inline-png-1.4.5.css">
+   <link rel="stylesheet" href="jquery.mobile.inline-png-1.4.5.min.css">
+   <link rel="stylesheet" href="jquery.mobile.inline-svg-1.4.5.css">
+   <link rel="stylesheet" href="jquery.mobile.inline-svg-1.4.5.min.css">
+   <link rel="stylesheet" href="jquery.mobile.structure-1.4.5.css">
+   <link rel="stylesheet" href="jquery.mobile.structure-1.4.5.min.css">
+   <script src="jquery-1.11.3.min.js"></script>
+   <script src="jquery.mobile-1.4.5.js"></script>
+<link rel="stylesheet" type="text/css" href="nav.css">
+<link rel="stylesheet" type="text/css" href="imageslide.css">
+<link rel="stylesheet" type="text/css" href="dibs.css">
+<link rel="stylesheet" type="text/css" href="stars.css">
+<script src="javascript.js"></script>
+<script src="star.js"></script>
+<script src="dibs.js"></script>
+<body onload="init()">
+	<section id="main" data-role="page" data-theme="a">
+		<header data-role="header">
+			<a href="index.html" data-ajax="false" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ">홈</a>
+			<h1>국내 여행지 추천</h1>
+			<a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">검색</a>
+		</header>
+			<div class="scroll-a">
+				<div class="scroll-b">
+					<ul class="nav">
+						<li class="nav"><a href="sightseeing.html" data-ajax="false" class="ui-btn ui-btn-b nav">관광지</a></li>
+						<li class="nav"><a href="restaurant.html" data-ajax="false" class="ui-btn ui-btn-b nav">유명맛집</a></li>
+						<li class="nav"><a href="lodging.html" data-ajax="false" class="ui-btn ui-btn-b nav">숙소</a></li>
+						<li class="nav"><a href="photospot.html" data-ajax="false" class="ui-btn ui-btn-b nav">사진명소</a></li>
+						<li class="nav"><a href="festival.html" data-ajax="false" class="ui-btn ui-btn-b nav">축제</a></li>
+						<li class="nav"><a href="cafe.html" data-ajax="false" class="ui-btn ui-btn-b nav">카페</a></li>
+						<li class="nav"><a href="activity.html" data-ajax="false" class="ui-btn ui-btn-b nav">액티비티</a></li>
+						<li class="nav"><a href="diblist.html" data-ajax="false" class="ui-btn ui-btn-b nav">찜목록</a></li>
+					</ul>
+				</div>
+			</div>
+		<br/>
+		<br/>
+		<article data-role="content" class="ui-content">
+			<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide17">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="rose1.jpg" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide17">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="rose2.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide17">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="rose3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide17">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="rose4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides17(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides17(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot17 active" onclick="currentSlide17(1)"></span> 
+  					<span class="dot17" onclick="currentSlide17(2)"></span> 
+	  				<span class="dot17" onclick="currentSlide17(3)"></span> 
+	  				<span class="dot17" onclick="currentSlide17(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>서울장미축제
+					<span class="star Star17" style="margin: 0 5px;">
+        			<a href="#" onclick="star17(1)">★</a>
+        			<a href="#" onclick="star17(2)">★</a>
+        			<a href="#" onclick="star17(3)">★</a>
+	        		<a href="#" onclick="star17(4)">★</a>
+    			    <a href="#" onclick="star17(5)">★</a>
+    				</span>
+    			</h2>
+
+				</p>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>
+					서울시의 특별축제<br><br>
+					2005년 중랑구의 소규모 지역 축제로 시작됐다가 2015년부터 서울장미축제로 명칭이 변경됐다. 서울시 중랑구에서 주최 및 주관하여 개최하며 3일 동안 주요 이벤트가 열린다. 축제 전후 일주일간을 '리틀 로즈 페스티벌'로 운영하여 축제의 분위기를 이어가고 있다. 무료로 입장이 가능하며 몇몇 체험 프로그램은 유료로 진행되고 있다.<br><br>
+					중랑천 부근 5km 길이의 장미거리를 조성하여 장미 약 8만8천여 주를 심고 장미터널을 만든다. 축제가 개최되는 3일은 각각 ‘장미의 날’, ‘연인의 날’, ‘아내의 날’로 명칭을 정하여 축제를 운영한다. 첫째 날인 ‘장미의 날’은 개막 공연, 장미퍼레이드 등과 함께 중랑구민의 날 기념식, 장미가요제 등 주민참여 프로그램으로 구성된다. 둘째 날인 ‘연인의 날’은 장미패션쇼, 해외 교류 공연 등 젊은 층과 외국인을 위한 프로그램으로 이루어진다. 마지막 ‘아내의 날’은 장미 꽃길 걷기, 로즈 트로트 메들리 등 ‘사랑스러운 아내를 위한 프로그램’ 콘셉트로 구성되어 있다. 이외에도 축제 기간 내내 즐길 수 있는 인디밴드, 버스킹 등의 중랑아티스트 거리공연과 장미산업전, 지역브랜드 축제 교류관, 한복 대여, 푸드트럭 등의 상설 프로그램이 있다. 차량이 통제된 중랑천로에서는 로즈마켓, 전통시장 먹거리 부스, 나라별 전통 소품과 세계 음식들을 판매하기도 한다.
+				</p>
+				<p style="margin:0 15px;">
+					<input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+					<a href="#myPopup34" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">주최</a>&nbsp;<input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">02-2094-0114 &nbsp; 
+				</p>
+				<div data-role="popup" id="myPopup34">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider"><b>주최시기</b></li>
+						<li>매년 5월</li>
+						<li data-role="list-divider">주최기간</li>
+						<li>3일 간</li>
+						<li data-role="list-divider">주최기관</li>
+						<li>중랑구</li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup35">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">행사내용</li>
+						<li>음악 공연</li>
+						<li>퍼레이드</li>
+						<li>프리마켓</li>
+						<li>불꽃 쇼</li>
+					</ul>
+				</div>
+ 				<p style="margin: 0 15px;">
+ 					<input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">서울특별시 중랑구 묵2동 중랑천로 332일대<br>
+ 					<input type="button" data-icon="bars" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup35" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">행사내용</a>&nbsp;
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b><img class="roseDibs dibs" name="서울장미축제" onclick="roseDibs()" src="nodibs.png"></p>
+				<br><br>
+			</p></div>
+
+			<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide18">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="roadart1.jpg" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide18">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="roadart2.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide18">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="roadart3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide18">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="roadart4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides18(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides18(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot18 active" onclick="currentSlide18(1)"></span> 
+  					<span class="dot18" onclick="currentSlide18(2)"></span> 
+	  				<span class="dot18" onclick="currentSlide18(3)"></span> 
+	  				<span class="dot18" onclick="currentSlide18(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>서울거리예술축제
+					<span class="star Star18" style="margin: 0 5px;">
+        			<a href="#" onclick="star18(1)">★</a>
+        			<a href="#" onclick="star18(2)">★</a>
+        			<a href="#" onclick="star18(3)">★</a>
+	        		<a href="#" onclick="star18(4)">★</a>
+    			    <a href="#" onclick="star18(5)">★</a>
+    				</span>
+    			</h2>
+
+				</p>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>
+					서울시의 특별축제<br><br>
+					「서울거리예술축제 2020」는 2003년 ‘하이서울페스티벌’이라는 이름으로 출발해 지난 2013년 거리예술에 특화된 축제로 자리 잡았으며, 2016년부터 <서울거리예술축제>로 명칭이 변경된 서울특별시의 대표 축제다.
+					<br><br>
+					서울거리예술축제는 대한민국 최대 규모를 자랑하는 거리예술축제로 대중성과 예술성이 조화된 수준 높은 거리공연을 서울시내 곳곳에서 무료로 선보인다. 서울특별시, 서울문화재단에서 주최한다.
+				</p>
+				<p style="margin:0 15px;">
+					<input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+					<a href="#myPopup36" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">주최</a>&nbsp;<input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">02-758-2044 &nbsp;
+					<a href="http://www.ssaf.or.kr/" target="_blank" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline"></a>홈페이지
+				</p>
+				<div data-role="popup" id="myPopup36">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider"><b>주최시기</b></li>
+						<li>2020.10.01 ~ 2020.10.04</li>
+						<li data-role="list-divider">공연시간</li>
+						<li>12:00~22:00</li>
+						<li data-role="list-divider">주최기관</li>
+						<li>서울특별시, 서울문화재단</li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup37">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">전연령</li>
+						<li>무료</li>
+					</ul>
+				</div>
+ 				<p style="margin: 0 15px;">
+ 					<input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">광장(서울광장, 청계광장),청계천로, 무교로 등<br>
+ 					<input type="button" data-icon="bars" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup37" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">이용요금</a>&nbsp;
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b><img class="roadartDibs dibs" name="서울거리예술축제" onclick="roadartDibs()" src="nodibs.png"></p>
+				<br><br>
+			</p></div>
+
+			<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide19">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="lantern1.jpg" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide19">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="lantern2.jpeg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide19">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="lantern3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide19">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="lantern4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides19(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides19(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot19 active" onclick="currentSlide19(1)"></span> 
+  					<span class="dot19" onclick="currentSlide19(2)"></span> 
+	  				<span class="dot19" onclick="currentSlide19(3)"></span> 
+	  				<span class="dot19" onclick="currentSlide19(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>서울빛초롱축제
+					<span class="star Star19" style="margin: 0 5px;">
+        			<a href="#" onclick="star19(1)">★</a>
+        			<a href="#" onclick="star19(2)">★</a>
+        			<a href="#" onclick="star19(3)">★</a>
+	        		<a href="#" onclick="star19(4)">★</a>
+    			    <a href="#" onclick="star19(5)">★</a>
+    				</span>
+    			</h2>
+
+				</p>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>
+					서울시의 특별축제<br><br>
+					서울빛초롱축제는 서울특별시 종로구 청계광장 및 청계천 일대에서 등을 주제로 펼쳐지는 축제이다. 서울관광재단에서 주최하고, 서울시에서 주관한다. 2009년부터 서울 등 축제라는 이름으로 시작되었으며, 2015년 현재의 이름으로 바뀌었다.
+					<br><br>
+					서울시 청계광장 및 청계천 일대에서 매년 11월 약 17일 동안 수백 개의 등불을 밝히는 빛 축제가 개최된다. 청계광장에서 수표교까지 약 1.2km의 거리에서 매년 특정 테마를 선정하여 축제를 연다. 서울빛초롱축제 조직위원회가 주최하고 서울관광재단이 주관하여 개최한다.
+				</p>
+				<p style="margin:0 15px;">
+					<input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+					<a href="#myPopup38" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">주최</a>&nbsp;<input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">02-3788-0856 &nbsp;
+					<a href="http://www.seoullantern.com/html/" target="_blank" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline"></a>홈페이지
+				</p>
+				<div data-role="popup" id="myPopup38">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider"><b>주최시기</b></li>
+						<li>매년 11월</li>
+						<li data-role="list-divider">공연시간</li>
+						<li>17:00~22:00(주말23:00)</li>
+						<li data-role="list-divider">주최기관</li>
+						<li>서울관광재단</li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup39">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">전연령</li>
+						<li>무료(일부 프로그램 제외)</li>
+					</ul>
+				</div>
+ 				<p style="margin: 0 15px;">
+ 					<input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">서울특별시 종로구 서린동 14-1 청계광장<br>
+ 					<input type="button" data-icon="bars" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup39" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">이용요금</a>&nbsp;
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b><img class="lanternDibs dibs" name="서울빛초롱축제" onclick="lanternDibs()" src="nodibs.png"></p>
+				<br><br>
+			</p></div>
+
+			<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide20">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="fireworks1.jpg" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide20">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="fireworks2.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide20">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="fireworks3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide20">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="fireworks4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides20(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides20(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot20 active" onclick="currentSlide20(1)"></span> 
+  					<span class="dot20" onclick="currentSlide20(2)"></span> 
+	  				<span class="dot20" onclick="currentSlide20(3)"></span> 
+	  				<span class="dot20" onclick="currentSlide20(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>서울세계불꽃축제
+					<span class="star Star20" style="margin: 0 5px;">
+        			<a href="#" onclick="star20(1)">★</a>
+        			<a href="#" onclick="star20(2)">★</a>
+        			<a href="#" onclick="star20(3)">★</a>
+	        		<a href="#" onclick="star20(4)">★</a>
+    			    <a href="#" onclick="star20(5)">★</a>
+    				</span>
+    			</h2>
+
+				</p>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>
+					불꽃놀이를 통해 21세기 한국의 비전을 새롭게 제시하고, 범국민적 영원의 메시지를 담아 민족의 화합의지를 다지는 기쁨과 희망의 장으로 삼고자 기획된 행사로, 2000년 10월에 처음 개최되었다. 10월초에 개최되며, 한화(주) 연화사업부에서 주관한다.
+					<br><br>
+					행사 장소는 영등포구 63빌딩 앞 여의도 한강시민공원 일대이며, 보통 하늘이 어두워지는 20시 무렵에 시작해 30분 정도 계속된다. 불꽃은 원효대교와 한강철교 사이의 바지선에서 쏘아 올려진다. 여의도 지구, 서울 전역의 한강시민공원, 동작구 일대, 한강대교·원효대교·마포대교, 지하철 4호선 동작역, 남산타워, 관악산 등에서는 화려한 불꽃놀이를 뚜렷하게 볼 수 있다.
+				</p>
+				<p style="margin:0 15px;">
+					<input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+					<a href="#myPopup40" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">주최</a>&nbsp;<input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">02-3498-0875 &nbsp;
+					<a href="https://hanwhafireworks.bulggot.co/" target="_blank" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline"></a>홈페이지
+				</p>
+				<div data-role="popup" id="myPopup40">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider"><b>주최시기</b></li>
+						<li>매년 10월 첫 토요일</li>
+						<li data-role="list-divider">관람시간</li>
+						<li>13:00~22:00</li>
+						<li data-role="list-divider">주최기관</li>
+						<li>한화(주), SBS</li>
+					</ul>
+				</div>
+ 				<p style="margin: 0 15px;">
+ 					<input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">서울특별시 영등포구 한강시민공원 일대<br>
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b><img class="fireworksDibs dibs" name="서울세계불꽃축제" onclick="fireworksDibs()" src="nodibs.png"></p>
+				<br><br>
+			</p></div>
+		</article>
+		<footer data-role="footer" data-fullscreen="true" data-position="fixed">
+			<h1>16112492 컴퓨터공학과 이동준</h1>
+		</footer>
+</body>
+</html>

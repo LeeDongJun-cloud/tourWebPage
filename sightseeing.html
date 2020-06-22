@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="jquery.mobile.external-png-1.4.5.css">
+   <link rel="stylesheet" href="jquery.mobile.external-png-1.4.5.min.css">
+   <link rel="stylesheet" href="jquery.mobile.icons-1.4.5.css">
+   <link rel="stylesheet" href="jquery.mobile.icons-1.4.5.min.css">
+   <link rel="stylesheet" href="jquery.mobile.inline-png-1.4.5.css">
+   <link rel="stylesheet" href="jquery.mobile.inline-png-1.4.5.min.css">
+   <link rel="stylesheet" href="jquery.mobile.inline-svg-1.4.5.css">
+   <link rel="stylesheet" href="jquery.mobile.inline-svg-1.4.5.min.css">
+   <link rel="stylesheet" href="jquery.mobile.structure-1.4.5.css">
+   <link rel="stylesheet" href="jquery.mobile.structure-1.4.5.min.css">
+   <script src="jquery-1.11.3.min.js"></script>
+   <script src="jquery.mobile-1.4.5.js"></script>
+<link rel="stylesheet" type="text/css" href="nav.css">
+<link rel="stylesheet" type="text/css" href="imageslide.css">
+<link rel="stylesheet" type="text/css" href="dibs.css">
+<link rel="stylesheet" type="text/css" href="stars.css">
+<script src="javascript.js"></script>
+<script src="star.js"></script>
+<script src="dibs.js"></script>
+<body onload="init()">
+	<section id="main" data-role="page" data-theme="a">
+		<header data-role="header">
+			<a href="index.html" data-ajax="false" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ">홈</a>
+			<h1>국내 여행지 추천</h1>
+			<a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">검색</a>
+		</header>
+			<div class="scroll-a">
+				<div class="scroll-b">
+					<ul class="nav">
+						<li class="nav"><a href="sightseeing.html" data-ajax="false" class="ui-btn ui-btn-b nav">관광지</a></li>
+						<li class="nav"><a href="restaurant.html" data-ajax="false" class="ui-btn ui-btn-b nav">유명맛집</a></li>
+						<li class="nav"><a href="lodging.html" data-ajax="false" class="ui-btn ui-btn-b nav">숙소</a></li>
+						<li class="nav"><a href="photospot.html" data-ajax="false" class="ui-btn ui-btn-b nav">사진명소</a></li>
+						<li class="nav"><a href="festival.html" data-ajax="false" class="ui-btn ui-btn-b nav">축제</a></li>
+						<li class="nav"><a href="cafe.html" data-ajax="false" class="ui-btn ui-btn-b nav">카페</a></li>
+						<li class="nav"><a href="activity.html" data-ajax="false" class="ui-btn ui-btn-b nav">액티비티</a></li>
+						<li class="nav"><a href="diblist.html" data-ajax="false" class="ui-btn ui-btn-b nav">찜목록</a></li>
+					</ul>
+				</div>
+			</div>
+		<br/>
+		<br/>
+		<article data-role="content" class="ui-content">
+			<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide1">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="gyeongbok1.jpg" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide1">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="gyeongbok2.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide1">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="gyeongbok3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide1">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="gyeongbok4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides1(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot1 active" onclick="currentSlide1(1)"></span> 
+  					<span class="dot1" onclick="currentSlide1(2)"></span> 
+	  				<span class="dot1" onclick="currentSlide1(3)"></span> 
+	  				<span class="dot1" onclick="currentSlide1(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>경복궁<span class="star Star1" style="margin: 0 5px;">
+        			<a href="#" onclick="star1(1)">★</a>
+        			<a href="#" onclick="star1(2)">★</a>
+        			<a href="#" onclick="star1(3)">★</a>
+	        		<a href="#" onclick="star1(4)">★</a>
+    			    <a href="#" onclick="star1(5)">★</a>
+    			</span></h2>
+
+				</p>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>1395년(태조 4년)에 창건하였다. ‘경복(景福)’은 시경에 나오는 말로 왕과 그 자손, 온 백성들이 태평성대의 큰 복을 누리기를 축원한다는 의미다. 풍수지리적으로도 백악산을 뒤로 하고 좌우에는 낙산과 인왕산으로 둘러싸여 있어 길지의 요건을 갖추고 있다. 1592년, 임진왜란으로 인해 불탄 이후 그 임무를 창덕궁에 넘겨주었다가 1865년(고종 2년)에 흥선대원군의 명으로 중건되었다. 일제 강점기에는 조선총독부 건물을 짓는 등 많은 전각들이 훼손되었으나, 1990년대부터 총독부 건물을 철거하는 등 복원사업을 벌인 덕분에 복원 작업은 현재 부분 완료된 상태다.</p>
+				
+				<p style="margin:0 15px;"><input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;"><a href="#myPopup" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">개장시간</a>&nbsp;<input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">02-3700-3900 &nbsp; <a href="http://www.royalpalace.go.kr/" target="_blank" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline"></a>홈페이지
+				</p>
+					<div data-role="popup" id="myPopup">
+					<ul data-role="listview" data-inset="true">
+				<li data-role="list-divider"><span style="color: red;">휴무</span></li>
+				<li><span style="color: red;">화요일</span></li>
+				<li data-role="list-divider">개장일</li>
+				<li>일요일 	오전 9:00~오후 6:00</li>
+				<li>월요일 	오전 9:00~오후 6:00</li>
+				<li>수요일	오전 9:00~오후 6:00</li>
+				<li>목요일	오전 9:00~오후 6:00</li>
+				<li>금요일	오전 9:00~오후 6:00</li>
+				<li>토요일	오전 9:00~오후 6:00</li>
+				</ul>
+				</p>
+				</div>
+				</p>
+ 				<p style="margin: 0 15px;"><input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">서울 종로구 사직로 161 경복궁
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b><img class="gyeongbokDibs dibs" name="경복궁" onclick="gyeongbokDibs()" src="nodibs.png"></p>
+				<br><br>
+				</div>
+			</div>
+			<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide2">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="myeongdong1.jpg" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide2">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="myeongdong2.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide2">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="myeongdong3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide2">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="myeongdong4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides2(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot2 active" onclick="currentSlide2(1)"></span> 
+  					<span class="dot2" onclick="currentSlide2(2)"></span> 
+	  				<span class="dot2" onclick="currentSlide2(3)"></span> 
+	  				<span class="dot2" onclick="currentSlide2(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>명동<span class="star Star2" style="margin: 0 5px;">
+        			<a href="#" onclick="star2(1)">★</a>
+        			<a href="#" onclick="star2(2)">★</a>
+        			<a href="#" onclick="star2(3)">★</a>
+	        		<a href="#" onclick="star2(4)">★</a>
+    			    <a href="#" onclick="star2(5)">★</a>
+    			</span></h2>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>명동(明洞)은 대한민국 서울특별시 중구에 있는 번화가이자, 지역 이름이다. 명동1가와 명동2가를 합친 면적은 0.91 km²이다. 명동1·2가, 충무로1·2가, 을지로1·2가 등을 포함하는 지역이다.</p>
+				<p style="margin: 15px;"><input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">서울 중구 명동&nbsp;<input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">02-778-0333&nbsp; <a href="http://korean.visitseoul.net/index" target="_blank" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline"></a>홈페이지</p>
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b>
+				<img class="myeongdongDibs dibs" name="명동" onclick="myeongdongDibs()" src="nodibs.png" width="50" height="50">
+				</p>
+				<br><br>
+			</div>
+			<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide3">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="namsan1.jpg" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide3">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="namsan2.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide3">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="namsan3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide3">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="namsan4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides3(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot3 active" onclick="currentSlide3(1)"></span> 
+  					<span class="dot3" onclick="currentSlide3(2)"></span> 
+	  				<span class="dot3" onclick="currentSlide3(3)"></span> 
+	  				<span class="dot3" onclick="currentSlide3(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>남산<span class="star Star3" style="margin: 0 5px;">
+        			<a href="#" onclick="star3(1)">★</a>
+        			<a href="#" onclick="star3(2)">★</a>
+        			<a href="#" onclick="star3(3)">★</a>
+	        		<a href="#" onclick="star3(4)">★</a>
+    			    <a href="#" onclick="star3(5)">★</a>
+    			</span></h2>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>남산은 서울특별시 중구와 용산구에 걸쳐 있는 산이다. 높이는 해발 270.85m로서 서울의 중심부에 위치하여 서울의 상징이 되기도 한다. 정상에는 N서울타워가 있으며, 그 부근까지는 케이블카가 설치되어 있고 남산 1·2·3호 터널이 뚫려 있다.</p>
+				<p style="margin:0 15px;"><input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;"><a href="#myPopup2" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">개장시간</a>&nbsp;<input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">02-3783-5900&nbsp; <a href="http://seoulnamsan.alltheway.kr/" target="_blank" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline"></a>홈페이지</p>
+					<div data-role="popup" id="myPopup2">
+					<ul data-role="listview" data-inset="true">
+				<li data-role="list-divider">남산타워 개장일</li>
+				<li>일요일 	오전 10:00~오후 11:00</li>
+				<li>월요일 	오전 10:00~오후 11:00</li>
+				<li>화요일 	오전 10:00~오후 11:00</li>
+				<li>수요일	오전 10:00~오후 11:00</li>
+				<li>목요일	오전 10:00~오후 11:00</li>
+				<li>금요일	오전 10:00~오후 11:00</li>
+				<li>토요일	오전 10:00~오후 11:00</li>
+				</ul>
+				</p>
+				</div>
+
+				</p>
+				<p style="margin: 15px;"><input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+서울 종로구 창신동</p>
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b>
+				<img class="namsanDibs dibs" name="남산" onclick="namsanDibs()" src="nodibs.png" width="50" height="50">
+				</p>
+				<br><br>
+			</div>
+			<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide4">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="cheonggyecheon1.jpg" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide4">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="cheonggyecheon2.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide4">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="cheonggyecheon3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide4">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="cheonggyecheon4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides4(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides4(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot4 active" onclick="currentSlide4(1)"></span> 
+  					<span class="dot4" onclick="currentSlide4(2)"></span> 
+	  				<span class="dot4" onclick="currentSlide4(3)"></span> 
+	  				<span class="dot4" onclick="currentSlide4(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>청계천<span class="star Star4" style="margin: 0 5px;">
+        			<a href="#" onclick="star4(1)">★</a>
+        			<a href="#" onclick="star4(2)">★</a>
+        			<a href="#" onclick="star4(3)">★</a>
+	        		<a href="#" onclick="star4(4)">★</a>
+    			    <a href="#" onclick="star4(5)">★</a>
+    			</span></h2>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>청계천은 대한민국 서울특별시 내부에 있는 지방하천으로, 한강 수계에 속하며 중랑천의 지류이다. 최장 발원지는 종로구 청운동에 위치한 ‘백운동 계곡’이며, 남으로 흐르다가 청계광장 부근의 지하에서 삼청동천을 합치며 몸집을 키운다. 이곳에서 방향을 동쪽으로 틀어 서울의 전통적인 도심지를 가로지르다가, 한양대학교 서울캠퍼스 옆에서 중랑천으로 흘러든다. 발원지에서부터 잰 본류의 길이는 10.92 km, 유역 면적은 50.96 km²이나, 백운동 계곡 언저리를 제외한 상류 2.50 km 구간은 일제강점기 이래 전면 복개되어 타 용도로 전용되는 등 사실상 하천의 기능을 상실하였다. 현재는 서울 이곳저곳에서 취수한 물을 중류의 청계광장에서 하루에 40,000 세제곱미터씩 인공적으로 방류하는 형태로 하천을 유지하고 있다. 발원지의 계곡은 서울특별시 기념물로 지정되었으며, 청계광장에서 중랑천 합수머리까지의 중·하류 8.12 km 구간은 서울시설공단의 관리 하에 공원으로 쓰인다.</p>
+				<p style="margin:0 15px;"><input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;"><a href="#myPopup3" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">개장시간</a>&nbsp;<input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">02-2290-6114&nbsp; <a href="https://www.sisul.or.kr/open_content/cheonggye/" target="_blank" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline"></a>홈페이지</p>
+					<div data-role="popup" id="myPopup3">
+					<ul data-role="listview" data-inset="true">
+				<li data-role="list-divider">개장일</li>
+				<li>일요일 	24시간 개장</li>
+				<li>월요일 	24시간 개장</li>
+				<li>화요일 	24시간 개장</li>
+				<li>수요일	24시간 개장</li>
+				<li>목요일	24시간 개장</li>
+				<li>금요일	24시간 개장</li>
+				<li>토요일	24시간 개장</li>
+				</ul>
+				</p>
+				</div>
+				</p>
+				<p style="margin: 15px;"><input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">서울 중구 회현동1가</p>
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b>
+				<img class="cheonggyecheonDibs dibs" name="청계천" onclick="cheonggyecheonDibs()" src="nodibs.png" width="50" height="50">
+				</p>
+				<br><br>
+			</div>
+		</article>
+		<footer data-role="footer" data-fullscreen="true" data-position="fixed">
+			<h1>16112492 컴퓨터공학과 이동준</h1>
+		</footer>
+</body>
+</html>

@@ -1,0 +1,10 @@
+.star a{
+	color: gray;
+	text-decoration: none;
+}
+.star a:hover{
+	color: gray;
+}
+.star a.on{
+	color: red;
+}

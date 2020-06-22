@@ -1,0 +1,2381 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="jquery.mobile.external-png-1.4.5.css">
+   <link rel="stylesheet" href="jquery.mobile.external-png-1.4.5.min.css">
+   <link rel="stylesheet" href="jquery.mobile.icons-1.4.5.css">
+   <link rel="stylesheet" href="jquery.mobile.icons-1.4.5.min.css">
+   <link rel="stylesheet" href="jquery.mobile.inline-png-1.4.5.css">
+   <link rel="stylesheet" href="jquery.mobile.inline-png-1.4.5.min.css">
+   <link rel="stylesheet" href="jquery.mobile.inline-svg-1.4.5.css">
+   <link rel="stylesheet" href="jquery.mobile.inline-svg-1.4.5.min.css">
+   <link rel="stylesheet" href="jquery.mobile.structure-1.4.5.css">
+   <link rel="stylesheet" href="jquery.mobile.structure-1.4.5.min.css">
+   <script src="jquery-1.11.3.min.js"></script>
+   <script src="jquery.mobile-1.4.5.js"></script>
+<link rel="stylesheet" type="text/css" href="nav.css">
+<link rel="stylesheet" type="text/css" href="imageslide.css">
+<link rel="stylesheet" type="text/css" href="dibs.css">
+<link rel="stylesheet" type="text/css" href="stars.css">
+<script src="javascript.js"></script>
+<script src="star.js"></script>
+<script src="dibs.js"></script>
+<body onload="init()">
+	<section id="seoul_main" data-role="page" data-theme="a">
+		<header data-role="header">
+			<a href="index.html" data-ajax="false" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ">홈</a>
+			<h1>국내 여행지 추천</h1>
+			<a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">검색</a>
+		</header>
+			<div class="scroll-a">
+				<div class="scroll-b">
+					<ul class="nav">
+						<li class="nav"><a href="sightseeing.html" data-ajax="false" class="ui-btn ui-btn-b nav">관광지</a></li>
+						<li class="nav"><a href="restaurant.html" data-ajax="false" class="ui-btn ui-btn-b nav">유명맛집</a></li>
+						<li class="nav"><a href="lodging.html" data-ajax="false" class="ui-btn ui-btn-b nav">숙소</a></li>
+						<li class="nav"><a href="photospot.html" data-ajax="false" class="ui-btn ui-btn-b nav">사진명소</a></li>
+						<li class="nav"><a href="festival.html" data-ajax="false" class="ui-btn ui-btn-b nav">축제</a></li>
+						<li class="nav"><a href="cafe.html" data-ajax="false" class="ui-btn ui-btn-b nav">카페</a></li>
+						<li class="nav"><a href="activity.html" data-ajax="false" class="ui-btn ui-btn-b nav">액티비티</a></li>
+						<li class="nav"><a href="diblist.html" data-ajax="false" class="ui-btn ui-btn-b nav">찜목록</a></li>
+					</ul>
+				</div>
+			</div>
+		<br/>
+		<br/>
+		<article data-role="content" class="ui-content">
+			<div style="width:100%;">
+				<img style="margin: 15px;" src="seoul_montage.png" width="100%" height="500">
+				<h2 style="margin: 15px;"><img src="seoul.png" width="25" height="25">서울특별시</h2>
+				<p style="margin: 15px;">서울특별시는 대한민국의 수도이자 최대 도시다. 백제의 첫 수도인 위례성이었고, 고려의 남경이었으며, 조선의 수도가 된 이후로 현재까지 대한민국 정치·경제·사회·문화의 중심지다. 중앙으로 한강이 흐르고, 북한산, 관악산, 도봉산, 불암산, 인릉산, 청계산, 아차산 등의 산들로 둘러싸인 분지 지형의 도시다. 넓이는 605.2 km²이며, 인구는 약 973만 명이다.시청 소재지는 중구이며, 25개의 자치구가 있다. 1986년 아시안 게임, 1988년 하계 올림픽, 2010년 서울 G20 정상회의 등을 개최하였다. 2018년 서울의 지역내총생산은 422조원이다.</p>
+				<br/>
+				<a href="#seoul_sightseeing" class="ui-btn ui-btn-b ui-corner-all ui-btn-inline">서울 관광지</a>
+				<a href="#seoul_restaurant" class="ui-btn ui-btn-b ui-corner-all ui-btn-inline">서울 맛집</a>
+				<a href="#seoul_lodging" class="ui-btn ui-btn-b ui-corner-all ui-btn-inline">서울 숙소</a>
+				<a href="#seoul_photospot" class="ui-btn ui-btn-b ui-corner-all ui-btn-inline">서울 사진명소</a>
+				<a href="#seoul_festival" class="ui-btn ui-btn-b ui-corner-all ui-btn-inline">서울 축제</a>
+				<a href="#seoul_cafe" class="ui-btn ui-btn-b ui-corner-all ui-btn-inline">서울 카페</a>
+				<a href="#seoul_activity" class="ui-btn ui-btn-b ui-corner-all ui-btn-inline">서울 액티비티</a>
+			</div>
+		</article>
+		<footer data-role="footer" data-fullscreen="true" data-position="fixed">
+			<h1>16112492 컴퓨터공학과 이동준</h1>
+		</footer>
+	</section>
+	<section id="seoul_sightseeing" data-role="page" data-theme="a">
+		<header data-role="header">
+			<a href="index.html" data-ajax="false" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ">홈</a>
+			<h1>국내 여행지 추천</h1>
+			<a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">검색</a>
+		</header>
+			<div class="scroll-a">
+				<div class="scroll-b">
+					<ul class="nav">
+						<li class="nav"><a href="sightseeing.html" data-ajax="false" class="ui-btn ui-btn-b nav">관광지</a></li>
+						<li class="nav"><a href="restaurant.html" data-ajax="false" class="ui-btn ui-btn-b nav">유명맛집</a></li>
+						<li class="nav"><a href="lodging.html" data-ajax="false" class="ui-btn ui-btn-b nav">숙소</a></li>
+						<li class="nav"><a href="photospot.html" data-ajax="false" class="ui-btn ui-btn-b nav">사진명소</a></li>
+						<li class="nav"><a href="festival.html" data-ajax="false" class="ui-btn ui-btn-b nav">축제</a></li>
+						<li class="nav"><a href="cafe.html" data-ajax="false" class="ui-btn ui-btn-b nav">카페</a></li>
+						<li class="nav"><a href="activity.html" data-ajax="false" class="ui-btn ui-btn-b nav">액티비티</a></li>
+						<li class="nav"><a href="diblist.html" data-ajax="false" class="ui-btn ui-btn-b nav">찜목록</a></li>
+					</ul>
+				</div>
+			</div>
+		<br/>
+		<br/>
+		<br/>
+		<article data-role="content" class="ui-content">
+			<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide1">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="gyeongbok1.jpg" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide1">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="gyeongbok2.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide1">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="gyeongbok3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide1">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="gyeongbok4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides1(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot1 active" onclick="currentSlide1(1)"></span> 
+  					<span class="dot1" onclick="currentSlide1(2)"></span> 
+	  				<span class="dot1" onclick="currentSlide1(3)"></span> 
+	  				<span class="dot1" onclick="currentSlide1(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>경복궁<span class="star Star1" style="margin: 0 5px;">
+        			<a href="#" onclick="star1(1)">★</a>
+        			<a href="#" onclick="star1(2)">★</a>
+        			<a href="#" onclick="star1(3)">★</a>
+	        		<a href="#" onclick="star1(4)">★</a>
+    			    <a href="#" onclick="star1(5)">★</a>
+    			</span></h2>
+
+				</p>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>1395년(태조 4년)에 창건하였다. ‘경복(景福)’은 시경에 나오는 말로 왕과 그 자손, 온 백성들이 태평성대의 큰 복을 누리기를 축원한다는 의미다. 풍수지리적으로도 백악산을 뒤로 하고 좌우에는 낙산과 인왕산으로 둘러싸여 있어 길지의 요건을 갖추고 있다. 1592년, 임진왜란으로 인해 불탄 이후 그 임무를 창덕궁에 넘겨주었다가 1865년(고종 2년)에 흥선대원군의 명으로 중건되었다. 일제 강점기에는 조선총독부 건물을 짓는 등 많은 전각들이 훼손되었으나, 1990년대부터 총독부 건물을 철거하는 등 복원사업을 벌인 덕분에 복원 작업은 현재 부분 완료된 상태다.</p>
+				
+				<p style="margin:0 15px;"><input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;"><a href="#myPopup" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">개장시간</a>&nbsp;<input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">02-3700-3900 &nbsp; <a href="http://www.royalpalace.go.kr/" target="_blank" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline"></a>홈페이지
+				</p>
+					<div data-role="popup" id="myPopup">
+					<ul data-role="listview" data-inset="true">
+				<li data-role="list-divider"><span style="color: red;">휴무</span></li>
+				<li><span style="color: red;">화요일</span></li>
+				<li data-role="list-divider">개장일</li>
+				<li>일요일 	오전 9:00~오후 6:00</li>
+				<li>월요일 	오전 9:00~오후 6:00</li>
+				<li>수요일	오전 9:00~오후 6:00</li>
+				<li>목요일	오전 9:00~오후 6:00</li>
+				<li>금요일	오전 9:00~오후 6:00</li>
+				<li>토요일	오전 9:00~오후 6:00</li>
+				</ul>
+				</p>
+				</div>
+				</p>
+ 				<p style="margin: 0 15px;"><input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">서울 종로구 사직로 161 경복궁
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b><img class="gyeongbokDibs dibs" name="경복궁" onclick="gyeongbokDibs()" src="nodibs.png"></p>
+				<br><br>
+				</div>
+			</div>
+			<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide2">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="myeongdong1.jpg" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide2">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="myeongdong2.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide2">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="myeongdong3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide2">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="myeongdong4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides2(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot2 active" onclick="currentSlide2(1)"></span> 
+  					<span class="dot2" onclick="currentSlide2(2)"></span> 
+	  				<span class="dot2" onclick="currentSlide2(3)"></span> 
+	  				<span class="dot2" onclick="currentSlide2(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>명동<span class="star Star2" style="margin: 0 5px;">
+        			<a href="#" onclick="star2(1)">★</a>
+        			<a href="#" onclick="star2(2)">★</a>
+        			<a href="#" onclick="star2(3)">★</a>
+	        		<a href="#" onclick="star2(4)">★</a>
+    			    <a href="#" onclick="star2(5)">★</a>
+    			</span></h2>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>명동(明洞)은 대한민국 서울특별시 중구에 있는 번화가이자, 지역 이름이다. 명동1가와 명동2가를 합친 면적은 0.91 km²이다. 명동1·2가, 충무로1·2가, 을지로1·2가 등을 포함하는 지역이다.</p>
+				<p style="margin: 15px;"><input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">서울 중구 명동&nbsp;<input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">02-778-0333&nbsp; <a href="http://korean.visitseoul.net/index" target="_blank" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline"></a>홈페이지</p>
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b>
+				<img class="myeongdongDibs dibs" name="명동" onclick="myeongdongDibs()" src="nodibs.png" width="50" height="50">
+				</p>
+				<br><br>
+			</div>
+			<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide3">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="namsan1.jpg" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide3">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="namsan2.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide3">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="namsan3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide3">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="namsan4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides3(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot3 active" onclick="currentSlide3(1)"></span> 
+  					<span class="dot3" onclick="currentSlide3(2)"></span> 
+	  				<span class="dot3" onclick="currentSlide3(3)"></span> 
+	  				<span class="dot3" onclick="currentSlide3(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>남산<span class="star Star3" style="margin: 0 5px;">
+        			<a href="#" onclick="star3(1)">★</a>
+        			<a href="#" onclick="star3(2)">★</a>
+        			<a href="#" onclick="star3(3)">★</a>
+	        		<a href="#" onclick="star3(4)">★</a>
+    			    <a href="#" onclick="star3(5)">★</a>
+    			</span></h2>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>남산은 서울특별시 중구와 용산구에 걸쳐 있는 산이다. 높이는 해발 270.85m로서 서울의 중심부에 위치하여 서울의 상징이 되기도 한다. 정상에는 N서울타워가 있으며, 그 부근까지는 케이블카가 설치되어 있고 남산 1·2·3호 터널이 뚫려 있다.</p>
+				<p style="margin:0 15px;"><input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;"><a href="#myPopup2" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">개장시간</a>&nbsp;<input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">02-3783-5900&nbsp; <a href="http://seoulnamsan.alltheway.kr/" target="_blank" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline"></a>홈페이지</p>
+					<div data-role="popup" id="myPopup2">
+					<ul data-role="listview" data-inset="true">
+				<li data-role="list-divider">남산타워 개장일</li>
+				<li>일요일 	오전 10:00~오후 11:00</li>
+				<li>월요일 	오전 10:00~오후 11:00</li>
+				<li>화요일 	오전 10:00~오후 11:00</li>
+				<li>수요일	오전 10:00~오후 11:00</li>
+				<li>목요일	오전 10:00~오후 11:00</li>
+				<li>금요일	오전 10:00~오후 11:00</li>
+				<li>토요일	오전 10:00~오후 11:00</li>
+				</ul>
+				</p>
+				</div>
+
+				</p>
+				<p style="margin: 15px;"><input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+서울 종로구 창신동</p>
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b>
+				<img class="namsanDibs dibs" name="남산" onclick="namsanDibs()" src="nodibs.png" width="50" height="50">
+				</p>
+				<br><br>
+			</div>
+			<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide4">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="cheonggyecheon1.jpg" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide4">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="cheonggyecheon2.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide4">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="cheonggyecheon3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide4">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="cheonggyecheon4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides4(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides4(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot4 active" onclick="currentSlide4(1)"></span> 
+  					<span class="dot4" onclick="currentSlide4(2)"></span> 
+	  				<span class="dot4" onclick="currentSlide4(3)"></span> 
+	  				<span class="dot4" onclick="currentSlide4(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>청계천<span class="star Star4" style="margin: 0 5px;">
+        			<a href="#" onclick="star4(1)">★</a>
+        			<a href="#" onclick="star4(2)">★</a>
+        			<a href="#" onclick="star4(3)">★</a>
+	        		<a href="#" onclick="star4(4)">★</a>
+    			    <a href="#" onclick="star4(5)">★</a>
+    			</span></h2>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>청계천은 대한민국 서울특별시 내부에 있는 지방하천으로, 한강 수계에 속하며 중랑천의 지류이다. 최장 발원지는 종로구 청운동에 위치한 ‘백운동 계곡’이며, 남으로 흐르다가 청계광장 부근의 지하에서 삼청동천을 합치며 몸집을 키운다. 이곳에서 방향을 동쪽으로 틀어 서울의 전통적인 도심지를 가로지르다가, 한양대학교 서울캠퍼스 옆에서 중랑천으로 흘러든다. 발원지에서부터 잰 본류의 길이는 10.92 km, 유역 면적은 50.96 km²이나, 백운동 계곡 언저리를 제외한 상류 2.50 km 구간은 일제강점기 이래 전면 복개되어 타 용도로 전용되는 등 사실상 하천의 기능을 상실하였다. 현재는 서울 이곳저곳에서 취수한 물을 중류의 청계광장에서 하루에 40,000 세제곱미터씩 인공적으로 방류하는 형태로 하천을 유지하고 있다. 발원지의 계곡은 서울특별시 기념물로 지정되었으며, 청계광장에서 중랑천 합수머리까지의 중·하류 8.12 km 구간은 서울시설공단의 관리 하에 공원으로 쓰인다.</p>
+				<p style="margin:0 15px;"><input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;"><a href="#myPopup3" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">개장시간</a>&nbsp;<input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">02-2290-6114&nbsp; <a href="https://www.sisul.or.kr/open_content/cheonggye/" target="_blank" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline"></a>홈페이지</p>
+					<div data-role="popup" id="myPopup3">
+					<ul data-role="listview" data-inset="true">
+				<li data-role="list-divider">개장일</li>
+				<li>일요일 	24시간 개장</li>
+				<li>월요일 	24시간 개장</li>
+				<li>화요일 	24시간 개장</li>
+				<li>수요일	24시간 개장</li>
+				<li>목요일	24시간 개장</li>
+				<li>금요일	24시간 개장</li>
+				<li>토요일	24시간 개장</li>
+				</ul>
+				</p>
+				</div>
+				</p>
+				<p style="margin: 15px;"><input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">서울 중구 회현동1가</p>
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b>
+				<img class="cheonggyecheonDibs dibs" name="청계천" onclick="cheonggyecheonDibs()" src="nodibs.png" width="50" height="50">
+				</p>
+				<br><br>
+			</div>
+		</article>
+		<footer data-role="footer" data-fullscreen="true" data-position="fixed">
+			<h1>16112492 컴퓨터공학과 이동준</h1>
+		</footer>
+	</section>
+	<section id="seoul_restaurant" data-role="page" data-theme="a">
+		<header data-role="header">
+			<a href="index.html" data-ajax="false" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ">홈</a>
+			<h1>국내 여행지 추천</h1>
+			<a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">검색</a>
+		</header>
+			<div class="scroll-a">
+				<div class="scroll-b">
+					<ul class="nav">
+						<li class="nav"><a href="sightseeing.html" data-ajax="false" class="ui-btn ui-btn-b nav">관광지</a></li>
+						<li class="nav"><a href="restaurant.html" data-ajax="false" class="ui-btn ui-btn-b nav">유명맛집</a></li>
+						<li class="nav"><a href="lodging.html" data-ajax="false" class="ui-btn ui-btn-b nav">숙소</a></li>
+						<li class="nav"><a href="photospot.html" data-ajax="false" class="ui-btn ui-btn-b nav">사진명소</a></li>
+						<li class="nav"><a href="festival.html" data-ajax="false" class="ui-btn ui-btn-b nav">축제</a></li>
+						<li class="nav"><a href="cafe.html" data-ajax="false" class="ui-btn ui-btn-b nav">카페</a></li>
+						<li class="nav"><a href="activity.html" data-ajax="false" class="ui-btn ui-btn-b nav">액티비티</a></li>
+						<li class="nav"><a href="diblist.html" data-ajax="false" class="ui-btn ui-btn-b nav">찜목록</a></li>
+					</ul>
+				</div>
+			</div>
+		<br/>
+		<br/>
+		<br/>
+		<article data-role="content" class="ui-content">
+			<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide5">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="cuisinbo1.jpg" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide5">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="cuisinbo2.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide5">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="cuisinbo3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide5">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="cuisinbo4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides5(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides5(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot5 active" onclick="currentSlide5(1)"></span> 
+  					<span class="dot5" onclick="currentSlide5(2)"></span> 
+	  				<span class="dot5" onclick="currentSlide5(3)"></span> 
+	  				<span class="dot5" onclick="currentSlide5(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>쿠이신보
+					<span class="star Star5" style="margin: 0 5px;">
+        			<a href="#" onclick="star5(1)">★</a>
+        			<a href="#" onclick="star5(2)">★</a>
+        			<a href="#" onclick="star5(3)">★</a>
+	        		<a href="#" onclick="star5(4)">★</a>
+    			    <a href="#" onclick="star5(5)">★</a>
+    				</span>
+    			</h2>
+
+				</p>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>
+					가로수길 술집 볏짚타타키를 맛볼 수 있는 이자카야<br>
+					아늑함 · 캐주얼 · 모임에 좋은 장소
+				</p>
+				
+				<p style="margin:0 15px;">
+					<input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+					<a href="#myPopup5" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">영업시간</a>&nbsp;<input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">02-546-9215 &nbsp; 
+				</p>
+				<div data-role="popup" id="myPopup5">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider"><span style="color: red;">휴무</span></li>
+						<li><span style="color: red;">일요일</span></li>
+						<li data-role="list-divider">영업일</li>
+						<li>월요일 	17:30~24:00</li>
+						<li>화요일 	17:30~24:00</li>
+						<li>수요일	17:30~24:00</li>
+						<li>목요일	17:30~24:00</li>
+						<li>금요일	17:30~02:00</li>
+						<li>토요일	17:30~02:00</li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup6">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">음식 종류</li>
+						<li>이자카야 / 오뎅 / 꼬치</li>
+						<li data-role="list-divider">가격대</li>
+						<li>20,000원 ~ 30,000원</li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup7">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">메뉴</li>
+						<li>참치뱃살 타타키 47,000원</li>
+						<li>시메사바 타타키 19,500원</li>
+						<li>참치등살 타타키 : 29,000원</li>
+						<li>참치 사시미 : 14,000원</li>
+						<li>시메사바 사시미 : 18,500원</li>
+					</ul>
+				</div>
+				
+ 				<p style="margin: 0 15px;">
+ 					<input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">서울특별시 강남구 도산대로15길 6 대화빌딩<br>
+ 					<input type="button" data-icon="bars" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup6" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">상세정보</a>&nbsp;
+ 					<input type="button" data-icon="bullets" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup7" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">메뉴</a>
+ 				</p>
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b><img class="cuisinboDibs dibs" name="쿠이신보" onclick="cuisinboDibs()" src="nodibs.png"></p>
+				<br><br>
+			</div>
+			<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide6">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="soi1.jpg" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide6">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="soi2.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide6">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="soi3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide6">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="soi4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides6(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides6(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot6 active" onclick="currentSlide6(1)"></span> 
+  					<span class="dot6" onclick="currentSlide6(2)"></span> 
+	  				<span class="dot6" onclick="currentSlide6(3)"></span> 
+	  				<span class="dot6" onclick="currentSlide6(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>소이연남마오
+					<span class="star Star6" style="margin: 0 5px;">
+        			<a href="#" onclick="star6(1)">★</a>
+        			<a href="#" onclick="star6(2)">★</a>
+        			<a href="#" onclick="star6(3)">★</a>
+	        		<a href="#" onclick="star6(4)">★</a>
+    			    <a href="#" onclick="star6(5)">★</a>
+    				</span>
+    			</h2>
+
+				</p>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>
+					미쉐린 가이드 2020<br>
+					캐주얼 · 모임에 좋은 장소 · 맥주
+				</p>
+				
+				<p style="margin:0 15px;">
+					<input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+					<a href="#myPopup8" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">영업시간</a>&nbsp;<input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">02-545-5130 &nbsp; 
+					<a href="https://www.instagram.com/soi_mao/" target="_blank" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline"></a>홈페이지
+				</p>
+				<div data-role="popup" id="myPopup8">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">영업시간</li>
+						<li>11:30~02:00</li>
+						<li data-role="list-divider">쉬는시간</li>
+						<li>16:00~18:00</li>
+						<li data-role="list-divider">마지막 주문</li>
+						<li>01:00</li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup9">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">음식 종류</li>
+						<li>태국 음식</li>
+						<li data-role="list-divider">가격대</li>
+						<li>10,000원 ~ 20,000원</li>
+					</ul>
+				</div>
+ 				<p style="margin: 0 15px;">
+ 					<input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">서울특별시 강남구 도산대로53길 30<br>
+ 					<input type="button" data-icon="bars" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup9" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">상세정보</a>&nbsp;
+ 				</p>
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b><img class="soiDibs dibs" name="소이연남마오" onclick="soiDibs()" src="nodibs.png"></p>
+				<br><br>
+			</div>
+			<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide7">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="jinmi1.jpg" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide7">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="jinmi2.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide7">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="jinmi3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide7">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="jinmi4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides7(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides7(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot7 active" onclick="currentSlide7(1)"></span> 
+  					<span class="dot7" onclick="currentSlide7(2)"></span> 
+	  				<span class="dot7" onclick="currentSlide7(3)"></span> 
+	  				<span class="dot7" onclick="currentSlide7(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>진미평양냉면
+					<span class="star Star7" style="margin: 0 5px;">
+        			<a href="#" onclick="star7(1)">★</a>
+        			<a href="#" onclick="star7(2)">★</a>
+        			<a href="#" onclick="star7(3)">★</a>
+	        		<a href="#" onclick="star7(4)">★</a>
+    			    <a href="#" onclick="star7(5)">★</a>
+    				</span>
+    			</h2>
+
+				</p>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>
+					미쉐린 가이드 2020<br>
+					캐주얼 · 모임에 좋은 장소 · 배달이 안 됨
+				</p>
+				
+				<p style="margin:0 15px;">
+					<input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+					<a href="#myPopup10" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">영업시간</a>&nbsp;<input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">02-515-3469 &nbsp; 
+					<a href="https://jinmipy.modoo.at/" target="_blank" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline"></a>홈페이지
+				</p>
+				<div data-role="popup" id="myPopup10">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">영업시간</li>
+						<li>11:00~21:30</li>
+						<li data-role="list-divider">마지막주문</li>
+						<li>21:10</li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup11">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">음식 종류</li>
+						<li>국수 / 면 요리</li>
+						<li data-role="list-divider">가격대</li>
+						<li>10,000원 ~ 20,000원</li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup12">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">메뉴</li>
+						<li>냉면(물/비빔): 11,000원</li>
+						<li>편육(소고기) 28,000원</li>
+						<li>제육 : 26,000원</li>
+						<li>제육반 : 13,000원</li>
+						<li>불고기(2인 이상) : 28,000원</li>
+					</ul>
+				</div>
+				
+ 				<p style="margin: 0 15px;">
+ 					<input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">서울특별시 강남구 학동로 305-3<br>
+ 					<input type="button" data-icon="bars" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup11" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">상세정보</a>&nbsp;
+ 					<input type="button" data-icon="bullets" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup12" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">메뉴</a>
+ 				</p>
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b><img class="jinmiDibs dibs" name="진미평양냉면" onclick="jinmiDibs()" src="nodibs.png"></p>
+				<br><br>
+			</div>
+			<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide8">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="herb1.jpg" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide8">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="herb2.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide8">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="herb3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide8">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="herb4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides8(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides8(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot8 active" onclick="currentSlide8(1)"></span> 
+  					<span class="dot8" onclick="currentSlide8(2)"></span> 
+	  				<span class="dot8" onclick="currentSlide8(3)"></span> 
+	  				<span class="dot8" onclick="currentSlide8(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>허브족발
+					<span class="star Star8" style="margin: 0 5px;">
+        			<a href="#" onclick="star8(1)">★</a>
+        			<a href="#" onclick="star8(2)">★</a>
+        			<a href="#" onclick="star8(3)">★</a>
+	        		<a href="#" onclick="star8(4)">★</a>
+    			    <a href="#" onclick="star8(5)">★</a>
+    				</span>
+    			</h2>
+
+				</p>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>
+					캐주얼 · 모임에 좋은 장소 · 맥주<br>
+					당산역에서 야들하고 맛있는 족발
+				</p>
+				
+				<p style="margin:0 15px;">
+					<input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+					<a href="#myPopup13" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">영업시간</a>&nbsp;<input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">02-2633-4339 &nbsp; 
+				</p>
+				<div data-role="popup" id="myPopup13">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider"><span style="color:red;">휴무</span></li>
+						<li><span style="color:red;">일요일</span></li>
+						<li data-role="list-divider">영업시간</li>
+						<li>16:00~23:30</li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup14">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">음식 종류</li>
+						<li>고기 요리</li>
+						<li data-role="list-divider">가격대</li>
+						<li>30,000원 ~ 40,000원</li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup15">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">메뉴</li>
+						<li>앞다리족발: 39,000원</li>
+						<li>뒷다리족발: 39,000원</li>
+						<li>매콤족발 : 40,000원</li>
+						<li>앞다리족발 매콤족발(반반) : 42,000원</li>
+						<li>뒷다리족발 매콤족발(반반) : 38,000원</li>
+					</ul>
+				</div>
+				
+ 				<p style="margin: 0 15px;">
+ 					<input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">서울특별시 영등포구 당산로48길 6<br>
+ 					<input type="button" data-icon="bars" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup14" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">상세정보</a>&nbsp;
+ 					<input type="button" data-icon="bullets" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup15" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">메뉴</a>
+ 				</p>
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b><img class="herbDibs dibs" name="허브족발" onclick="herbDibs()" src="nodibs.png"></p>
+				<br><br>
+			</div>
+		</article>
+		<footer data-role="footer" data-fullscreen="true" data-position="fixed">
+			<h1>16112492 컴퓨터공학과 이동준</h1>
+		</footer>
+	</section>
+	<section id="seoul_lodging" data-role="page" data-theme="a">
+		<header data-role="header">
+			<a href="index.html" data-ajax="false" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ">홈</a>
+			<h1>국내 여행지 추천</h1>
+			<a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">검색</a>
+		</header>
+			<div class="scroll-a">
+				<div class="scroll-b">
+					<ul class="nav">
+						<li class="nav"><a href="sightseeing.html" data-ajax="false" class="ui-btn ui-btn-b nav">관광지</a></li>
+						<li class="nav"><a href="restaurant.html" data-ajax="false" class="ui-btn ui-btn-b nav">유명맛집</a></li>
+						<li class="nav"><a href="lodging.html" data-ajax="false" class="ui-btn ui-btn-b nav">숙소</a></li>
+						<li class="nav"><a href="photospot.html" data-ajax="false" class="ui-btn ui-btn-b nav">사진명소</a></li>
+						<li class="nav"><a href="festival.html" data-ajax="false" class="ui-btn ui-btn-b nav">축제</a></li>
+						<li class="nav"><a href="cafe.html" data-ajax="false" class="ui-btn ui-btn-b nav">카페</a></li>
+						<li class="nav"><a href="activity.html" data-ajax="false" class="ui-btn ui-btn-b nav">액티비티</a></li>
+						<li class="nav"><a href="diblist.html" data-ajax="false" class="ui-btn ui-btn-b nav">찜목록</a></li>
+					</ul>
+				</div>
+			</div>
+		<br/>
+		<br/>
+		<br/>
+			<article data-role="content" class="ui-content">
+				<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide9">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="zzzip1.jpg" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide9">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="zzzip2.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide9">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="zzzip3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide9">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="zzzip4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides9(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides9(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot9 active" onclick="currentSlide9(1)"></span> 
+  					<span class="dot9" onclick="currentSlide9(2)"></span> 
+	  				<span class="dot9" onclick="currentSlide9(3)"></span> 
+	  				<span class="dot9" onclick="currentSlide9(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>ZZZIP GUESTHOUSE
+					<span class="star Star9" style="margin: 0 5px;">
+        			<a href="#" onclick="star9(1)">★</a>
+        			<a href="#" onclick="star9(2)">★</a>
+        			<a href="#" onclick="star9(3)">★</a>
+	        		<a href="#" onclick="star9(4)">★</a>
+    			    <a href="#" onclick="star9(5)">★</a>
+    				</span>
+    			</h2>
+
+				</p>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>
+					2성급 호텔 / 게스트하우스<br><br>
+					지하철 2호선과 6호선이 지나는 합정역에서 도보로 4분 거리에 있는 이 호스텔은 공용 주방과 공용 라운지를 갖추고 있습니다. 전역에서 무료 Wi-Fi를 이용하실 수 있습니다. 김포 국제공항까지는 차로 20분이 소요됩니다.
+<br><br>
+Zzzip 게스트하우스는 이층침대가 마련된 도미토리룸과 전용 객실을 모두 보유하고 있습니다. 모든 객실에는 다채로운 색상의 침대 구성, 에어컨 및 난방시설이 구비되어 있습니다. 욕실과 화장실은 공용입니다.
+<br><br>
+Zzzip 게스트하우스는 지하철 홍대역에서 도보로 15분 거리에 있습니다. 호스텔에서 이화여자대학교까지는 차로 15분이 소요됩니다.
+<br><br>
+					
+					깔끔한 홍대 게스트하우스
+				</p>
+				<p style="margin:0 15px;">
+					<input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+					<a href="#myPopup16" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">이용시간</a>&nbsp;<input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">070-7622-3595 &nbsp; 
+					<a href="https://zzzipguesthouseinhongdae.southkrhotel.com/" target="_blank" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline"></a>홈페이지
+				</p>
+				<div data-role="popup" id="myPopup16">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">입실</li>
+						<li>14:00</li>
+						<li data-role="list-divider">퇴실</li>
+						<li>11:00</li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup17">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">주차불가</li>
+						<li data-role="list-divider">편의시설 및 특징</li>
+						<li>조식제공</li>
+						<li>와이파이</li>
+						<li>조식제공</li>
+						<li>공용시설</li>
+						<li>가족실</li>
+						<li>침대방</li>
+						<li>2인실</li>
+						<li>도미토리</li>
+					</ul>
+				</div>
+ 				<p style="margin: 0 15px;">
+ 					<input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">서울특별시 마포구 성지1길 32-16<br>
+ 					<input type="button" data-icon="bars" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup17" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">상세정보</a>&nbsp;
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b><img class="zzzipDibs dibs" name="ZZZIP" onclick="zzzipDibs()" src="nodibs.png"></p>
+				<br><br>
+			</p></div>
+			<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide10">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="shilla1.jpg" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide10">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="shilla2.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide10">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="shilla3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide10">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="shilla4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides10(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides10(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot10 active" onclick="currentSlide10(1)"></span> 
+  					<span class="dot10" onclick="currentSlide10(2)"></span> 
+	  				<span class="dot10" onclick="currentSlide10(3)"></span> 
+	  				<span class="dot10" onclick="currentSlide10(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>서울신라호텔
+					<span class="star Star10" style="margin: 0 5px;">
+        			<a href="#" onclick="star10(1)">★</a>
+        			<a href="#" onclick="star10(2)">★</a>
+        			<a href="#" onclick="star10(3)">★</a>
+	        		<a href="#" onclick="star10(4)">★</a>
+    			    <a href="#" onclick="star10(5)">★</a>
+    				</span>
+    			</h2>
+
+				</p>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>
+					5성급 호텔
+					<br><br>
+					현대적인 객실과 스위트룸을 갖춘 고급 호텔로 헬스장, 스파, 루프탑 수영장, 고급 레스토랑을 이용할 수 있습니다.
+					<br><br>
+					<b>서울 신라 호텔 - <5성급:한국관광공사 인증></b> - 서울 중심에 자리한 럭셔리 호텔인 서울 신라 호텔은 3호선 동대입구역 5번 출구에서 도보로 5분 거리에 있으며 명동과 동대문 방면으로 무료 셔틀버스를 운행하고 있습니다. 호텔에서 번화한 명동 거리까지는 차로 15분, 시청까지는 차로 약 20분이 소요됩니다. 호텔 내에 유명 작가들의 조각상이 모여있는 야외조각공원과 겔랑 스파가 있어 여유로운 휴식 시간을 보내실 수 있으며 피트니스 센터, 사우나, 수영장 등도 있어 다양한 운동을 즐기실 수 있습니다. 뿐만 아니라, 비즈니스 고객님들을 위한 미팅룸과 비즈니스 센터도 있으며 프런트데스크에서는 환전, 유료 세탁, 룸서비스 등을 이용하실 수 있습니다. 또한, 투숙객에 한하여 무료 주차가 가능하며 유료로 발렛파킹을 이용하실 수 있습니다. 총 426개의 객실을 보유하고 있으며 객실에 따라 남산 또는 영빈관 전망을 감상하실 수 있습니다. 럭셔리하고 모던한 인테리어가 돋보이는 모든 객실에는 TV, 미나바, 생수 등이 있으며 욕실에는 샤워부스, 욕조, 비데, 헤어드라이어 등이 완비되어 있습니다. 또한, 이그제큐티브 이상 객실에서는 이규제큐티브 라운지를 이용하실 수 있습니다. 호텔 내에 중식, 일식, 한식, 프렌치, 뷔페 등 다양한 메뉴를 선보이는 5개의 레스토랑과 1개의 바가 있어 다이닝 선택의 폭이 넓습니다. 매일 아침 조식은 1층 파크뷰에서 즉석에서 조리한 뷔페를 즐기실 수 있으며 별도의 요금이 발생합니다.
+				</p>
+				<p style="margin:0 15px;">
+					<input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+					<a href="#myPopup18" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">이용시간</a>&nbsp;<input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">02-2233-3131 &nbsp; 
+					<a href="https://www.shilla.net/seoul/index.do" target="_blank" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline"></a>홈페이지
+				</p>
+				<div data-role="popup" id="myPopup18">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">입실</li>
+						<li>15:00</li>
+						<li data-role="list-divider">퇴실</li>
+						<li>12:00</li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup19">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">인터넷</li>
+						<li>무료 와이파이</li>
+						<li data-role="list-divider">교통</li>
+						<li>공항 셔틀 제공 / 발렛 파킹</li>
+						<li data-role="list-divider">편의 서비스</li>
+						<li>24시간 리셉션</li>
+						<li>드라이 클리닝</li>
+						<li>구두 광택 서비스</li>
+						<li data-role="list-divider">웰빙 액티비티</li>
+						<li>수영장 / 실내 수영장</li>
+						<li>레스토랑</li>
+						<li>미니 골프코스</li>
+						<li data-role="list-divider">식당</li>
+						<li>레스토랑</li>
+						<li>바 / 라운지</li>
+						<li data-role="list-divider">비즈니스</li>
+						<li>비즈니스 센터</li>
+						<li>회의실</li>
+						<li>화상 회의</li>
+					</ul>
+				</div>
+ 				<p style="margin: 0 15px;">
+ 					<input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">서울특별시 중구 장충동 동호로 249<br>
+ 					<input type="button" data-icon="bars" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup19" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">시설정보</a>&nbsp;
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b><img class="shillaDibs dibs" name="서울신라호텔" onclick="shillaDibs()" src="nodibs.png"></p>
+				<br><br>
+			</p>
+		</div>
+		<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide11">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="backpacker1.jpg" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide11">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="backpacker2.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide11">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="backpacker3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide11">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="backpacker4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides11(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides11(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot11 active" onclick="currentSlide11(1)"></span> 
+  					<span class="dot11" onclick="currentSlide11(2)"></span> 
+	  				<span class="dot11" onclick="currentSlide11(3)"></span> 
+	  				<span class="dot11" onclick="currentSlide11(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>Backpackers INSIDE
+					<span class="star Star11" style="margin: 0 5px;">
+        			<a href="#" onclick="star11(1)">★</a>
+        			<a href="#" onclick="star11(2)">★</a>
+        			<a href="#" onclick="star11(3)">★</a>
+	        		<a href="#" onclick="star11(4)">★</a>
+    			    <a href="#" onclick="star11(5)">★</a>
+    				</span>
+    			</h2>
+
+				</p>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>
+					2성급 호텔 / 게스트하우스
+					<br><br>
+					
+welcome
+Enjoy a comfortable stay and real Korean lifestyle here, at Backpackers INSIDE.
+
+We are located in the heart of Daehangno, a historical, cultural, and shopping area (Dongdaemun) within the Jongro district of Seoul. It is only a five-minute walk from the nearest bus stop and subway station.
+
+Meet other travelers from all over the world while sharing a cup of korean green tea in our fully-equipped kitchen or watching TV/DVDs in our cabin-like common room.
+				</p>
+				<p style="margin:0 15px;">
+					<input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+					<a href="#myPopup20" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">이용시간</a>&nbsp;<input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">02-3672-1120 &nbsp; 
+					<a href="https://www.insideseoulhostel.com/" target="_blank" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline"></a>홈페이지
+				</p>
+				<div data-role="popup" id="myPopup20">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">입실</li>
+						<li>15:00~23:00</li>
+						<li data-role="list-divider">퇴실</li>
+						<li>11:00이전</li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup21">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">서비스</li>
+						<li>Van Taxi pick-up</li>
+						<li>Bicycle Rent</li>
+						<li>Postcard & Stamps</li>
+						<li>Luggage service</li>
+					</ul>
+				</div>
+ 				<p style="margin: 0 15px;">
+ 					<input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">서울특별시 종로구 혜화동 성균관로4길 5<br>
+ 					<input type="button" data-icon="bars" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup21" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">제공 서비스</a>&nbsp;
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b><img class="backpackerDibs dibs" name="Backpackers" onclick="backpackerDibs()" src="nodibs.png"></p>
+				<br><br>
+			</p></div>
+			<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide12">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="sglamping1.jpg" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide12">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="sglamping2.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide12">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="sglamping3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide12">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="sglamping4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides12(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides12(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot12 active" onclick="currentSlide12(1)"></span> 
+  					<span class="dot12" onclick="currentSlide12(2)"></span> 
+	  				<span class="dot12" onclick="currentSlide12(3)"></span> 
+	  				<span class="dot12" onclick="currentSlide12(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>서울북한산럭셔리카라반&수영장글램핑<br>
+					<span class="star Star12" style="margin: 0 5px;">
+        			<a href="#" onclick="star12(1)">★</a>
+        			<a href="#" onclick="star12(2)">★</a>
+        			<a href="#" onclick="star12(3)">★</a>
+	        		<a href="#" onclick="star12(4)">★</a>
+    			    <a href="#" onclick="star12(5)">★</a>
+    				</span>
+    			</h2>
+
+				</p>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>
+					캠핑, 야영장
+					<br><br>
+					서울 북한산자락에 위치한 최고급글램핑과 럭셔리카라반<br><br>
+					최고 안전하고 튼튼한 최고급 카라반 그리고 글램핑장<br><br>
+
+ 최근 완공한 샤워실, 화장실, 개수대, 관리실 등 최고급 부대 시설을 갖춘 글램핑장<br><br>
+
+ 기업, 단체 워크샵이 가능한 시설 (대형 바베큐장) 2018년 4월 신축 완공<br><br>
+서울 글램핑은 서울 최초 유일한 글램핑장으로, 
+북한산 자락에 농원을 끼고 자연 친화적으로 디자인 된 글램핑 및 카라반 35동이 있습니다.
+				</p>
+				<p style="margin:0 15px;">
+					<input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+					<a href="#myPopup22" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">이용시간</a>&nbsp;<input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">010-2331-0734 &nbsp; 
+					<a href="https://bookhansan.modoo.at/" target="_blank" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline"></a>홈페이지
+				</p>
+				<div data-role="popup" id="myPopup22">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">체크인</li>
+						<li>15:00</li>
+						<li data-role="list-divider">체크아웃</li>
+						<li>11:00</li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup23">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">인기</li>
+						<li>수영장</li>
+						<li>Wi-Fi (무료)</li>
+						<li>주차가능 (무료)</li>
+						<li>에어컨</li>
+						<li data-role="list-divider">기타</li>
+						<li>반려동물 허용</li>
+						<li>일부 객실 내 주방 시설</li>
+					</ul>
+				</div>
+ 				<p style="margin: 0 15px;">
+ 					<input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">서울 은평구 진관동 326-1<br>
+ 					<input type="button" data-icon="bars" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup23" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">편의시설</a>&nbsp;
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b><img class="sglampingDibs dibs" name="서울북한산럭셔리카라반&수영장글램핑" onclick="sglampingDibs()" src="nodibs.png"></p>
+				<br><br>
+			</p></div>
+			</article>
+		<footer data-role="footer" data-fullscreen="true" data-position="fixed">
+			<h1>16112492 컴퓨터공학과 이동준</h1>
+		</footer>
+	</section>
+	<section id="seoul_photospot" data-role="page" data-theme="a">
+		<header data-role="header">
+			<a href="index.html" data-ajax="false" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ">홈</a>
+			<h1>국내 여행지 추천</h1>
+			<a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">검색</a>
+		</header>
+			<div class="scroll-a">
+				<div class="scroll-b">
+					<ul class="nav">
+						<li class="nav"><a href="sightseeing.html" data-ajax="false" class="ui-btn ui-btn-b nav">관광지</a></li>
+						<li class="nav"><a href="restaurant.html" data-ajax="false" class="ui-btn ui-btn-b nav">유명맛집</a></li>
+						<li class="nav"><a href="lodging.html" data-ajax="false" class="ui-btn ui-btn-b nav">숙소</a></li>
+						<li class="nav"><a href="photospot.html" data-ajax="false" class="ui-btn ui-btn-b nav">사진명소</a></li>
+						<li class="nav"><a href="festival.html" data-ajax="false" class="ui-btn ui-btn-b nav">축제</a></li>
+						<li class="nav"><a href="cafe.html" data-ajax="false" class="ui-btn ui-btn-b nav">카페</a></li>
+						<li class="nav"><a href="activity.html" data-ajax="false" class="ui-btn ui-btn-b nav">액티비티</a></li>
+						<li class="nav"><a href="diblist.html" data-ajax="false" class="ui-btn ui-btn-b nav">찜목록</a></li>
+					</ul>
+				</div>
+			</div>
+		<br/>
+		<br/>
+		<br/>
+		<article data-role="content" class="ui-content">
+			<div style="width:100%;">
+			<div class="slideshow-container">
+				<div class="mySlides fade first slide13">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="naksan1.jpg" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide13">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="naksan2.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide13">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="naksan3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide13">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="naksan4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides13(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides13(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot13 active" onclick="currentSlide13(1)"></span> 
+  					<span class="dot13" onclick="currentSlide13(2)"></span> 
+	  				<span class="dot13" onclick="currentSlide13(3)"></span> 
+	  				<span class="dot13" onclick="currentSlide13(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>낙산공원
+					<span class="star Star13" style="margin: 0 5px;">
+        			<a href="#" onclick="star13(1)">★</a>
+        			<a href="#" onclick="star13(2)">★</a>
+        			<a href="#" onclick="star13(3)">★</a>
+	        		<a href="#" onclick="star13(4)">★</a>
+    			    <a href="#" onclick="star13(5)">★</a>
+    				</span>
+    			</h2>
+
+				</p>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>
+					수도 서울을 구성하는 내사산(內四山:북악산·남산·인왕산·낙산)의 하나이자 주산(主山)인 북악산의 좌청룡(左靑龍)에 해당하는 낙산의 자연환경과 역사적 문화환경을 복원함으로써 서울시민들에게 쾌적한 공원 경관을 제공하고, 자연 탐방을 통해 역사와 문화 교육의 장을 제공할 목적으로 조성되었다.<br><br>
+					총면적은 6만 1145평으로, 1999년 12월 30일 착공해 2002년 7월 완공하였다. 주요 시설은 ① 전시 및 관리실, 매점 및 화장실, 비우당(庇雨堂), 육각 정자, 노인정 등 건축시설 5동 ② 12개의 배드민턴장과 1개의 농구장으로 이루어진 운동시설 ③ 10개의 휴게소와 117개의 의자로 구성된 편의시설 ④ 중앙광장·이벤트광장 및 3개의 전망광장으로 이루어진 광장시설 ⑤ 기타 안내판 외 28개 시설 등이다. 그 외에 공원 녹지화를 위해 소나무를 포함해 총 40종 8만 9670그루의 나무를 심었다.
+				</p>
+				<p style="margin:0 15px;">
+					<input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+					<a href="#myPopup24" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">이용시간</a>&nbsp;<input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">02-743-7985 &nbsp; 
+					<a href="https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=3c98e24b-9fb9-4ecf-b8a2-f26a5890748f&temp=" target="_blank" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline"></a>홈페이지
+				</p>
+				<div data-role="popup" id="myPopup24">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">이용시간</li>
+						<li>매일 00:00 - 24:00</li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup25">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">연령제한없음</li>
+						<li>무료</li>
+					</ul>
+				</div>
+ 				<p style="margin: 0 15px;">
+ 					<input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">서울 종로구 낙산길 41	<br>
+ 					<input type="button" data-icon="bars" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup25" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">입장료</a>&nbsp;
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b><img class="naksanDibs dibs" name="낙산공원" onclick="naksanDibs()" src="nodibs.png"></p>
+				<br><br>
+			</p></div>
+			<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide14">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="yongma1.jpg" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide14">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="yongma2.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide14">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="yongma3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide14">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="yongma4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides14(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides14(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot14 active" onclick="currentSlide14(1)"></span> 
+  					<span class="dot14" onclick="currentSlide14(2)"></span> 
+	  				<span class="dot14" onclick="currentSlide14(3)"></span> 
+	  				<span class="dot14" onclick="currentSlide14(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>용마랜드
+					<span class="star Star14" style="margin: 0 5px;">
+        			<a href="#" onclick="star14(1)">★</a>
+        			<a href="#" onclick="star14(2)">★</a>
+        			<a href="#" onclick="star14(3)">★</a>
+	        		<a href="#" onclick="star14(4)">★</a>
+    			    <a href="#" onclick="star14(5)">★</a>
+    				</span>
+    			</h2>
+
+				</p>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>
+					용마 랜드는 서울시 중랑구 용마산에있는 작은 버려진 유원지입니다. 낮은 수익으로 문을 닫았지만 하루에 10,000 원이면 누구에게나 열려 있습니다. 이제는 코스프레 및 다양한 트렌드의 인기 명소입니다.<br><br>
+					영업시간은 09시부터 일몰후 30분까지 개장합니다. 
+주차는 무료이며, 정문 앞 공간이나 촬영소 내부에 주차 할 수 있습니다. 
+휴무일은 없으나 방송국, 기업 등에서 전체대관을 하는 경우 입장이 제한되니 방문 5일전까지는 반드시 용마랜드공식카페에서 알림게시판을 확인 해주시길 바랍니다.
+				</p>
+				<p style="margin:0 15px;">
+					<input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+					<a href="#myPopup26" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">이용시간</a>&nbsp;<input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">02-436-5800 &nbsp; 
+					<a href="http://cafe.naver.com/yongmaland/" target="_blank" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline"></a>홈페이지
+				</p>
+				<div data-role="popup" id="myPopup26">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">이용시간</li>
+						<li>매일 09:30 - 18:00</li>
+						<li data-role="list-divider"><span style="color:red">월별마감시간다름</span></li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup27">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">성인</li>
+						<li>10,000원</li>
+						<li data-role="list-divider">고교생이하, 답사</li>
+						<li>5,000원</li>
+						<li data-role="list-divider"><span style="color:red;">영상촬영 및 기타촬영 별도 문의</span></li>
+						<li data-role="list-divider"><span style="color:red;">대관 별도 문의</span></li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup28">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">상세정보</li>
+						<li>주차</li>
+						<li>반려동물 동반</li>
+					</ul>
+				</div>
+ 				<p style="margin: 0 15px;">
+ 					<input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">서울 중랑구 망우로70길 118	<br>
+ 					<input type="button" data-icon="bars" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup27" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">입장료</a>&nbsp;
+ 					<a href="#myPopup28" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">상세정보</a>
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b><img class="yongmaDibs dibs" name="용마랜드" onclick="yongmaDibs()" src="nodibs.png"></p>
+				<br><br>
+			</p></div>
+			<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide15">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="olympicpark1.jpg" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide15">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="olympicpark2.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide15">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="olympicpark3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide15">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="olympicpark4.png" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides15(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides15(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot15 active" onclick="currentSlide15(1)"></span> 
+  					<span class="dot15" onclick="currentSlide15(2)"></span> 
+	  				<span class="dot15" onclick="currentSlide15(3)"></span> 
+	  				<span class="dot15" onclick="currentSlide15(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>올림픽공원
+					<span class="star Star15" style="margin: 0 5px;">
+        			<a href="#" onclick="star15(1)">★</a>
+        			<a href="#" onclick="star15(2)">★</a>
+        			<a href="#" onclick="star15(3)">★</a>
+	        		<a href="#" onclick="star15(4)">★</a>
+    			    <a href="#" onclick="star15(5)">★</a>
+    				</span>
+    			</h2>
+
+				</p>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>
+					도시,테마공원<br><br>
+					전체면적은 43만 8000평이다. 서울특별시가 1,823억 원의 사업비를 들여 1984년 4월에 착공해 1986년 4월에 완공하였다. 운영은 서울올림픽기념국민체육진흥공단과 한국체육산업개발(주)이 맡고 있다. 원래는 1986년 서울아시아경기대회와 1988년 서울올림픽대회를 목적으로 건설되었으나, 지금은 체육·문화예술·역사·교육·휴식 등 다양한 용도를 갖춘 종합공원으로 이용되고 있다.<br><br>
+
+3개 테마공원으로 구분되는데, 첫째는 산책·조깅 코스, 건강지압로, 인라인스케이팅, 레포츠 킥보딩, 엑스게임경기장으로 이루어진 건강올림픽공원이고, 둘째는 몽촌역사관, 몽촌토성, 평화의 성지, 조각작품공원, 올림픽미술관으로 이루어진 볼거리 올림픽공원, 셋째는 호돌이 관광열차, 음악분수, 웨딩사진 찍기, 이벤트 광장 등으로 구성된 재미있는 올림픽공원이 그것이다.
+				</p>
+				<p style="margin:0 15px;">
+					<input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+					<a href="#myPopup29" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">이용시간</a>&nbsp;<input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">02-410-1114 &nbsp; 
+					<a href="http://olympicpark.kspo.or.kr/" target="_blank" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline"></a>홈페이지
+				</p>
+				<div data-role="popup" id="myPopup29">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider"><b>이용시간</b></li>
+						<li data-role="list-divider">도보나 자전거출입(광장은 24:00)</li>
+						<li>매일 05:00 ~ 22:00</li>
+						<li data-role="list-divider">차량 출입</li>
+						<li>매일 06:00 ~ 22:00</li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup30">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">전연령</li>
+						<li>무료</li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup31">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">상세정보</li>
+						<li>주차</li>
+					</ul>
+				</div>
+ 				<p style="margin: 0 15px;">
+ 					<input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">서울 송파구 오륜동 올림픽로 424<br>
+ 					<input type="button" data-icon="bars" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup30" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">입장료</a>&nbsp;
+ 					<a href="#myPopup31" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">상세정보</a>
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b><img class="olympicparkDibs dibs" name="올림픽공원" onclick="olympicparkDibs()" src="nodibs.png"></p>
+				<br><br>
+			</p></div>
+			<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide16">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="gyeonghee1.jpg" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide16">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="gyeonghee2.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide16">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="gyeonghee3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide16">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="gyeonghee4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides16(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides16(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot16 active" onclick="currentSlide16(1)"></span> 
+  					<span class="dot16" onclick="currentSlide16(2)"></span> 
+	  				<span class="dot16" onclick="currentSlide16(3)"></span> 
+	  				<span class="dot16" onclick="currentSlide16(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>경희궁
+					<span class="star Star16" style="margin: 0 5px;">
+        			<a href="#" onclick="star16(1)">★</a>
+        			<a href="#" onclick="star16(2)">★</a>
+        			<a href="#" onclick="star16(3)">★</a>
+	        		<a href="#" onclick="star16(4)">★</a>
+    			    <a href="#" onclick="star16(5)">★</a>
+    				</span>
+    			</h2>
+
+				</p>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>
+					궁궐 / 궁전<br><br>
+					본래 경덕궁(慶德宮)으로 불렸다. 처음 창건 때는 유사시에 왕이 본궁을 떠나 피우(避寓)하는 이궁(離宮)으로 지어졌으나, 궁의 규모가 크고 여러 임금이 이 궁에서 정사를 보았기 때문에 동궐인 창덕궁에 대하여 서궐이라 불리고 중요시되었다.<br><br>
+
+경희궁은 서울특별시에 있는 조선 시대 궁궐로 광해군 9년에 건립한 이후, 10대에 걸쳐 임금이 정사를 보았던 궁궐이다. 서울시에 있는 5대 궁궐 중에서 서쪽에 자리하여 서궐로도 불렀으며, 새문안 대궐, 새문동 대궐, 아주개 대궐이라고도 하였다.</p>
+				<p style="margin:0 15px;">
+					<input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+					<a href="#myPopup32" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">이용시간</a>&nbsp;<input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">02-724-0274 &nbsp; 
+					<a href="https://museum.seoul.go.kr/m/annex/ghp.jsp" target="_blank" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline"></a>홈페이지
+				</p>
+				<div data-role="popup" id="myPopup32">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider"><b>이용시간</b></li>
+						<li>매일 09:00 ~ 18:00</li>
+						<li data-role="list-divider"><span style="color: red;">휴무</span></li>
+						<li><span style="color: red;">매주 월요일</span></li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup33">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">전연령</li>
+						<li>무료</li>
+					</ul>
+				</div>
+ 				<p style="margin: 0 15px;">
+ 					<input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">서울특별시 종로구 사직동 새문안로 45<br>
+ 					<input type="button" data-icon="bars" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup33" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">입장료</a>&nbsp;
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b><img class="gyeongheeDibs dibs" name="경희궁" onclick="gyeongheeDibs()" src="nodibs.png"></p>
+				<br><br>
+			</p></div>
+		</article>
+		<footer data-role="footer" data-fullscreen="true" data-position="fixed">
+			<h1>16112492 컴퓨터공학과 이동준</h1>
+		</footer>
+	</section>
+	<section id="seoul_festival" data-role="page" data-theme="a">
+		<header data-role="header">
+			<a href="index.html" data-ajax="false" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ">홈</a>
+			<h1>국내 여행지 추천</h1>
+			<a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">검색</a>
+		</header>
+			<div class="scroll-a">
+				<div class="scroll-b">
+					<ul class="nav">
+						<li class="nav"><a href="sightseeing.html" data-ajax="false" class="ui-btn ui-btn-b nav">관광지</a></li>
+						<li class="nav"><a href="restaurant.html" data-ajax="false" class="ui-btn ui-btn-b nav">유명맛집</a></li>
+						<li class="nav"><a href="lodging.html" data-ajax="false" class="ui-btn ui-btn-b nav">숙소</a></li>
+						<li class="nav"><a href="photospot.html" data-ajax="false" class="ui-btn ui-btn-b nav">사진명소</a></li>
+						<li class="nav"><a href="festival.html" data-ajax="false" class="ui-btn ui-btn-b nav">축제</a></li>
+						<li class="nav"><a href="cafe.html" data-ajax="false" class="ui-btn ui-btn-b nav">카페</a></li>
+						<li class="nav"><a href="activity.html" data-ajax="false" class="ui-btn ui-btn-b nav">액티비티</a></li>
+						<li class="nav"><a href="diblist.html" data-ajax="false" class="ui-btn ui-btn-b nav">찜목록</a></li>
+					</ul>
+				</div>
+			</div>
+		<br/>
+		<br/>
+		<br/>
+		<article data-role="content" class="ui-content">
+			<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide17">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="rose1.jpg" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide17">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="rose2.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide17">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="rose3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide17">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="rose4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides17(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides17(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot17 active" onclick="currentSlide17(1)"></span> 
+  					<span class="dot17" onclick="currentSlide17(2)"></span> 
+	  				<span class="dot17" onclick="currentSlide17(3)"></span> 
+	  				<span class="dot17" onclick="currentSlide17(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>서울장미축제
+					<span class="star Star17" style="margin: 0 5px;">
+        			<a href="#" onclick="star17(1)">★</a>
+        			<a href="#" onclick="star17(2)">★</a>
+        			<a href="#" onclick="star17(3)">★</a>
+	        		<a href="#" onclick="star17(4)">★</a>
+    			    <a href="#" onclick="star17(5)">★</a>
+    				</span>
+    			</h2>
+
+				</p>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>
+					서울시의 특별축제<br><br>
+					2005년 중랑구의 소규모 지역 축제로 시작됐다가 2015년부터 서울장미축제로 명칭이 변경됐다. 서울시 중랑구에서 주최 및 주관하여 개최하며 3일 동안 주요 이벤트가 열린다. 축제 전후 일주일간을 '리틀 로즈 페스티벌'로 운영하여 축제의 분위기를 이어가고 있다. 무료로 입장이 가능하며 몇몇 체험 프로그램은 유료로 진행되고 있다.<br><br>
+					중랑천 부근 5km 길이의 장미거리를 조성하여 장미 약 8만8천여 주를 심고 장미터널을 만든다. 축제가 개최되는 3일은 각각 ‘장미의 날’, ‘연인의 날’, ‘아내의 날’로 명칭을 정하여 축제를 운영한다. 첫째 날인 ‘장미의 날’은 개막 공연, 장미퍼레이드 등과 함께 중랑구민의 날 기념식, 장미가요제 등 주민참여 프로그램으로 구성된다. 둘째 날인 ‘연인의 날’은 장미패션쇼, 해외 교류 공연 등 젊은 층과 외국인을 위한 프로그램으로 이루어진다. 마지막 ‘아내의 날’은 장미 꽃길 걷기, 로즈 트로트 메들리 등 ‘사랑스러운 아내를 위한 프로그램’ 콘셉트로 구성되어 있다. 이외에도 축제 기간 내내 즐길 수 있는 인디밴드, 버스킹 등의 중랑아티스트 거리공연과 장미산업전, 지역브랜드 축제 교류관, 한복 대여, 푸드트럭 등의 상설 프로그램이 있다. 차량이 통제된 중랑천로에서는 로즈마켓, 전통시장 먹거리 부스, 나라별 전통 소품과 세계 음식들을 판매하기도 한다.
+				</p>
+				<p style="margin:0 15px;">
+					<input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+					<a href="#myPopup34" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">주최</a>&nbsp;<input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">02-2094-0114 &nbsp; 
+				</p>
+				<div data-role="popup" id="myPopup34">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider"><b>주최시기</b></li>
+						<li>매년 5월</li>
+						<li data-role="list-divider">주최기간</li>
+						<li>3일 간</li>
+						<li data-role="list-divider">주최기관</li>
+						<li>중랑구</li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup35">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">행사내용</li>
+						<li>음악 공연</li>
+						<li>퍼레이드</li>
+						<li>프리마켓</li>
+						<li>불꽃 쇼</li>
+					</ul>
+				</div>
+ 				<p style="margin: 0 15px;">
+ 					<input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">서울특별시 중랑구 묵2동 중랑천로 332일대<br>
+ 					<input type="button" data-icon="bars" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup35" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">행사내용</a>&nbsp;
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b><img class="roseDibs dibs" name="서울장미축제" onclick="roseDibs()" src="nodibs.png"></p>
+				<br><br>
+			</p></div>
+
+			<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide18">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="roadart1.jpg" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide18">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="roadart2.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide18">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="roadart3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide18">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="roadart4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides18(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides18(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot18 active" onclick="currentSlide18(1)"></span> 
+  					<span class="dot18" onclick="currentSlide18(2)"></span> 
+	  				<span class="dot18" onclick="currentSlide18(3)"></span> 
+	  				<span class="dot18" onclick="currentSlide18(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>서울거리예술축제
+					<span class="star Star18" style="margin: 0 5px;">
+        			<a href="#" onclick="star18(1)">★</a>
+        			<a href="#" onclick="star18(2)">★</a>
+        			<a href="#" onclick="star18(3)">★</a>
+	        		<a href="#" onclick="star18(4)">★</a>
+    			    <a href="#" onclick="star18(5)">★</a>
+    				</span>
+    			</h2>
+
+				</p>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>
+					서울시의 특별축제<br><br>
+					「서울거리예술축제 2020」는 2003년 ‘하이서울페스티벌’이라는 이름으로 출발해 지난 2013년 거리예술에 특화된 축제로 자리 잡았으며, 2016년부터 <서울거리예술축제>로 명칭이 변경된 서울특별시의 대표 축제다.
+					<br><br>
+					서울거리예술축제는 대한민국 최대 규모를 자랑하는 거리예술축제로 대중성과 예술성이 조화된 수준 높은 거리공연을 서울시내 곳곳에서 무료로 선보인다. 서울특별시, 서울문화재단에서 주최한다.
+				</p>
+				<p style="margin:0 15px;">
+					<input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+					<a href="#myPopup36" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">주최</a>&nbsp;<input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">02-758-2044 &nbsp;
+					<a href="http://www.ssaf.or.kr/" target="_blank" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline"></a>홈페이지
+				</p>
+				<div data-role="popup" id="myPopup36">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider"><b>주최시기</b></li>
+						<li>2020.10.01 ~ 2020.10.04</li>
+						<li data-role="list-divider">공연시간</li>
+						<li>12:00~22:00</li>
+						<li data-role="list-divider">주최기관</li>
+						<li>서울특별시, 서울문화재단</li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup37">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">전연령</li>
+						<li>무료</li>
+					</ul>
+				</div>
+ 				<p style="margin: 0 15px;">
+ 					<input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">광장(서울광장, 청계광장),청계천로, 무교로 등<br>
+ 					<input type="button" data-icon="bars" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup37" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">이용요금</a>&nbsp;
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b><img class="roadartDibs dibs" name="서울거리예술축제" onclick="roadartDibs()" src="nodibs.png"></p>
+				<br><br>
+			</p></div>
+
+			<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide19">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="lantern1.jpg" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide19">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="lantern2.jpeg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide19">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="lantern3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide19">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="lantern4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides19(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides19(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot19 active" onclick="currentSlide19(1)"></span> 
+  					<span class="dot19" onclick="currentSlide19(2)"></span> 
+	  				<span class="dot19" onclick="currentSlide19(3)"></span> 
+	  				<span class="dot19" onclick="currentSlide19(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>서울빛초롱축제
+					<span class="star Star19" style="margin: 0 5px;">
+        			<a href="#" onclick="star19(1)">★</a>
+        			<a href="#" onclick="star19(2)">★</a>
+        			<a href="#" onclick="star19(3)">★</a>
+	        		<a href="#" onclick="star19(4)">★</a>
+    			    <a href="#" onclick="star19(5)">★</a>
+    				</span>
+    			</h2>
+
+				</p>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>
+					서울시의 특별축제<br><br>
+					서울빛초롱축제는 서울특별시 종로구 청계광장 및 청계천 일대에서 등을 주제로 펼쳐지는 축제이다. 서울관광재단에서 주최하고, 서울시에서 주관한다. 2009년부터 서울 등 축제라는 이름으로 시작되었으며, 2015년 현재의 이름으로 바뀌었다.
+					<br><br>
+					서울시 청계광장 및 청계천 일대에서 매년 11월 약 17일 동안 수백 개의 등불을 밝히는 빛 축제가 개최된다. 청계광장에서 수표교까지 약 1.2km의 거리에서 매년 특정 테마를 선정하여 축제를 연다. 서울빛초롱축제 조직위원회가 주최하고 서울관광재단이 주관하여 개최한다.
+				</p>
+				<p style="margin:0 15px;">
+					<input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+					<a href="#myPopup38" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">주최</a>&nbsp;<input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">02-3788-0856 &nbsp;
+					<a href="http://www.seoullantern.com/html/" target="_blank" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline"></a>홈페이지
+				</p>
+				<div data-role="popup" id="myPopup38">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider"><b>주최시기</b></li>
+						<li>매년 11월</li>
+						<li data-role="list-divider">공연시간</li>
+						<li>17:00~22:00(주말23:00)</li>
+						<li data-role="list-divider">주최기관</li>
+						<li>서울관광재단</li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup39">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">전연령</li>
+						<li>무료(일부 프로그램 제외)</li>
+					</ul>
+				</div>
+ 				<p style="margin: 0 15px;">
+ 					<input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">서울특별시 종로구 서린동 14-1 청계광장<br>
+ 					<input type="button" data-icon="bars" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup39" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">이용요금</a>&nbsp;
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b><img class="lanternDibs dibs" name="서울빛초롱축제" onclick="lanternDibs()" src="nodibs.png"></p>
+				<br><br>
+			</p></div>
+
+			<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide20">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="fireworks1.jpg" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide20">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="fireworks2.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide20">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="fireworks3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide20">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="fireworks4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides20(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides20(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot20 active" onclick="currentSlide20(1)"></span> 
+  					<span class="dot20" onclick="currentSlide20(2)"></span> 
+	  				<span class="dot20" onclick="currentSlide20(3)"></span> 
+	  				<span class="dot20" onclick="currentSlide20(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>서울세계불꽃축제
+					<span class="star Star20" style="margin: 0 5px;">
+        			<a href="#" onclick="star20(1)">★</a>
+        			<a href="#" onclick="star20(2)">★</a>
+        			<a href="#" onclick="star20(3)">★</a>
+	        		<a href="#" onclick="star20(4)">★</a>
+    			    <a href="#" onclick="star20(5)">★</a>
+    				</span>
+    			</h2>
+
+				</p>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>
+					불꽃놀이를 통해 21세기 한국의 비전을 새롭게 제시하고, 범국민적 영원의 메시지를 담아 민족의 화합의지를 다지는 기쁨과 희망의 장으로 삼고자 기획된 행사로, 2000년 10월에 처음 개최되었다. 10월초에 개최되며, 한화(주) 연화사업부에서 주관한다.
+					<br><br>
+					행사 장소는 영등포구 63빌딩 앞 여의도 한강시민공원 일대이며, 보통 하늘이 어두워지는 20시 무렵에 시작해 30분 정도 계속된다. 불꽃은 원효대교와 한강철교 사이의 바지선에서 쏘아 올려진다. 여의도 지구, 서울 전역의 한강시민공원, 동작구 일대, 한강대교·원효대교·마포대교, 지하철 4호선 동작역, 남산타워, 관악산 등에서는 화려한 불꽃놀이를 뚜렷하게 볼 수 있다.
+				</p>
+				<p style="margin:0 15px;">
+					<input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+					<a href="#myPopup40" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">주최</a>&nbsp;<input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">02-3498-0875 &nbsp;
+					<a href="https://hanwhafireworks.bulggot.co/" target="_blank" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline"></a>홈페이지
+				</p>
+				<div data-role="popup" id="myPopup40">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider"><b>주최시기</b></li>
+						<li>매년 10월 첫 토요일</li>
+						<li data-role="list-divider">관람시간</li>
+						<li>13:00~22:00</li>
+						<li data-role="list-divider">주최기관</li>
+						<li>한화(주), SBS</li>
+					</ul>
+				</div>
+ 				<p style="margin: 0 15px;">
+ 					<input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">서울특별시 영등포구 한강시민공원 일대<br>
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b><img class="fireworksDibs dibs" name="서울세계불꽃축제" onclick="fireworksDibs()" src="nodibs.png"></p>
+				<br><br>
+			</p></div>
+		</article>
+		<footer data-role="footer" data-fullscreen="true" data-position="fixed">
+			<h1>16112492 컴퓨터공학과 이동준</h1>
+		</footer>
+	</section>
+	<section id="seoul_cafe" data-role="page" data-theme="a">
+		<header data-role="header">
+			<a href="index.html" data-ajax="false" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ">홈</a>
+			<h1>국내 여행지 추천</h1>
+			<a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">검색</a>
+		</header>
+			<div class="scroll-a">
+				<div class="scroll-b">
+					<ul class="nav">
+						<li class="nav"><a href="sightseeing.html" data-ajax="false" class="ui-btn ui-btn-b nav">관광지</a></li>
+						<li class="nav"><a href="restaurant.html" data-ajax="false" class="ui-btn ui-btn-b nav">유명맛집</a></li>
+						<li class="nav"><a href="lodging.html" data-ajax="false" class="ui-btn ui-btn-b nav">숙소</a></li>
+						<li class="nav"><a href="photospot.html" data-ajax="false" class="ui-btn ui-btn-b nav">사진명소</a></li>
+						<li class="nav"><a href="festival.html" data-ajax="false" class="ui-btn ui-btn-b nav">축제</a></li>
+						<li class="nav"><a href="cafe.html" data-ajax="false" class="ui-btn ui-btn-b nav">카페</a></li>
+						<li class="nav"><a href="activity.html" data-ajax="false" class="ui-btn ui-btn-b nav">액티비티</a></li>
+						<li class="nav"><a href="diblist.html" data-ajax="false" class="ui-btn ui-btn-b nav">찜목록</a></li>
+					</ul>
+				</div>
+			</div>
+		<br/>
+		<br/>
+		<br/>
+		<article data-role="content" class="ui-content">
+			<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide21">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="fritz1.jpg" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide21">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="fritz2.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide21">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="fritz3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide21">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="fritz4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides21(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides21(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot21 active" onclick="currentSlide21(1)"></span> 
+  					<span class="dot21" onclick="currentSlide21(2)"></span> 
+	  				<span class="dot21" onclick="currentSlide21(3)"></span> 
+	  				<span class="dot21" onclick="currentSlide21(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>프릳츠 도화점
+					<span class="star Star21" style="margin: 0 5px;">
+        			<a href="#" onclick="star21(1)">★</a>
+        			<a href="#" onclick="star21(2)">★</a>
+        			<a href="#" onclick="star21(3)">★</a>
+	        		<a href="#" onclick="star21(4)">★</a>
+    			    <a href="#" onclick="star21(5)">★</a>
+    				</span>
+    			</h2>
+
+				</p>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>
+					커피숍/커피 전문점<br><br>
+					공덕역 카페 프릳츠의 맛있는 베이커리 디저트 커피<br><br>
+					아늑함 · 캐주얼 · 모임에 좋은 장소<br><br>
+					1층과 2층은 커피와 베이커리를 판매하고 있으며, 평일에도 사람들로 북적이는 뉴트로 감성 카페이다. 카페 프릳츠는 원두부터 컵, 공책 등을 제품을 브랜드화해서 판매하고 있으며, 패키징이 독특해 많은 인기를 얻고 있다. <br><br>공동창업자 중 한명이 한국 바리스타 챔피언십 우승자로, 인증된 커피를 맛볼 수 있다. 너무 달지 않고 커피와 찰떡 궁합인 베이커리류도 많은 사랑을 받고 있다. 
+				</p>
+				
+				<p style="margin:0 15px;">
+					<input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+					<a href="#myPopup41" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">영업시간</a>&nbsp;<input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">02-3275-2045 &nbsp; 
+					<a href="http://fritz.co.kr/" target="_blank" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline"></a>홈페이지
+				</p>
+				<div data-role="popup" id="myPopup41">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">평일</li>
+						<li>08:00~23:00</li>
+						<li data-role="list-divider"><span style="color:red;">주말</span></li>
+						<li><span style="color:red;">10:00~23:00</li>
+						<li data-role="list-divider"><span style="color:red;">공휴일</span></li>
+						<li><span style="color:red;">10:00~23:00</span></li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup42">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">상세정보</li>
+						<li>무선 인터넷, 반려동물 동반</li>
+						<li data-role="list-divider"><span style="color:red;">주의</span></li>
+						<li><span style="color:red;">주차불가, 명절 휴무</span></li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup43">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">메뉴</li>
+						<li>에스프레소: 4,400원</li>
+						<li>아메리카노: 4,400원</li>
+						<li>카푸치노  : 4,800원</li>
+						<li>카페라떼  : 4,800원</li>
+						<li>플랫화이트: 4,800원</li>
+					</ul>
+				</div>
+				
+ 				<p style="margin: 0 15px;">
+ 					<input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">서울 마포구 새창로2길 17<br>
+ 					<input type="button" data-icon="bars" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup42" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">상세정보</a>&nbsp;
+ 					<input type="button" data-icon="bullets" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup43" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">메뉴</a>
+ 				</p>
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b><img class="fritzDibs dibs" name="프릳츠" onclick="fritzDibs()" src="nodibs.png"></p>
+				<br><br>
+
+				<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide22">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="layered1.jpg" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide22">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="layered2.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide22">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="layered3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide22">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="layered4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides22(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides22(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot22 active" onclick="currentSlide22(1)"></span> 
+  					<span class="dot22" onclick="currentSlide22(2)"></span> 
+	  				<span class="dot22" onclick="currentSlide22(3)"></span> 
+	  				<span class="dot22" onclick="currentSlide22(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>레이어드 연남
+					<span class="star Star22" style="margin: 0 5px;">
+        			<a href="#" onclick="star22(1)">★</a>
+        			<a href="#" onclick="star22(2)">★</a>
+        			<a href="#" onclick="star22(3)">★</a>
+	        		<a href="#" onclick="star22(4)">★</a>
+    			    <a href="#" onclick="star22(5)">★</a>
+    				</span>
+    			</h2>
+
+				</p>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>
+					카페, 디저트<br><br>
+					SNS에서 자주 볼 수 있는 연남동 '카페 레이어드'이다. 많은 빵순이들의 성지로 소개된 '레이어드'는 빵지순례의 길, 스콘 맛집으로 잘 알려져있다.<br><br>브라우니, 케이크, 스콘 등 다양한 종류의 디저트가 준비되어 있다. 또, SNS용 사진을 찍기 좋게 디저트를 진열해 인기 많은 카페로 꼽히는 이유를 단번에 알아 차릴 수 있다. <br><br>
+					1층은 디저트와 커피를 판매하고, 2,3층은 테이블이 준비되어 있지만 평일에 가도 자리 잡기가 쉽지 않다. 대표 메뉴로는 영국식 스콘과 귀여운 강아지 크림이 올라간 레드벨벳이 있다.
+				</p>
+				
+				<p style="margin:0 15px;">
+					<input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+					<a href="#myPopup44" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">영업시간</a>&nbsp; 
+					<a href="https://www.instagram.com/cafe_layered/" target="_blank" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline"></a>홈페이지
+				</p>
+				<div data-role="popup" id="myPopup44">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">매일</li>
+						<li>10:00~22:00</li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup45">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider"><span style="color:red;">주의</span></li>
+						<li><span style="color:red;">배달이 안 됨</span></li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup46">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">메뉴</li>
+						<li>에스프레소: 4,500원</li>
+						<li>에스프레소 콘파나: 5,000원</li>
+						<li>아메리카노  : 5,000원</li>
+						<li>카페라떼  : 6,000원</li>
+						<li>플랫화이트: 6,000원</li>
+					</ul>
+				</div>
+				
+ 				<p style="margin: 0 15px;">
+ 					<input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">서울 마포구 성미산로 161-4<br>
+ 					<input type="button" data-icon="bars" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup45" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">상세정보</a>&nbsp;
+ 					<input type="button" data-icon="bullets" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup46" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">메뉴</a>
+ 				</p>
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b><img class="layeredDibs dibs" name="레이어드" onclick="layeredDibs()" src="nodibs.png"></p>
+				<br><br>
+
+				<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide23">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="dongyang1.png" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide23">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="dongyang2.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide23">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="dongyang3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide23">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="dongyang4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides23(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides23(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot23 active" onclick="currentSlide23(1)"></span> 
+  					<span class="dot23" onclick="currentSlide23(2)"></span> 
+	  				<span class="dot23" onclick="currentSlide23(3)"></span> 
+	  				<span class="dot23" onclick="currentSlide23(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>동백양과점
+					<span class="star Star23" style="margin: 0 5px;">
+        			<a href="#" onclick="star23(1)">★</a>
+        			<a href="#" onclick="star23(2)">★</a>
+        			<a href="#" onclick="star23(3)">★</a>
+	        		<a href="#" onclick="star23(4)">★</a>
+    			    <a href="#" onclick="star23(5)">★</a>
+    				</span>
+    			</h2>
+
+				</p>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>
+					커피숍/커피 전문점<br><br>
+					KBS 주말 예능프로그램 '슈퍼맨이 돌아왔다'에서 축구선수 박주호의 자녀 건후와 나은이가 광희와 함께 방문해 화제를 모은 디저트 카페 '동백양과점'이다.<br><br>웨이팅없이는 먹을 수 없다는 수플레케이크와 다양한 음료를 판매하고 있다. '동백 양과점'이라는 이름에서 전해지듯, 가게 분위기와 인테리어에서 옛 서울을 간접 체험할 수 있다.<br><br>
+					대표 메뉴로는 딸기 수플레 팬케이크가 있으며, 입에 넣는 순간 녹아버리는 수플레 케이크를 맛볼 수 있다.  최근, 연남동에 2호점이 새로 오픈해 SNS상에서 화제를 모으고 있다.
+				</p>
+				
+				<p style="margin:0 15px;">
+					<input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+					<a href="#myPopup47" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">영업시간</a>&nbsp; <input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">02-744-1224 &nbsp; 
+				</p>
+				<div data-role="popup" id="myPopup47">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">매일</li>
+						<li>10:00~23:00</li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup48">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">메뉴</li>
+						<li>익선1937 드립커피: 7,500원</li>
+						<li>동백아가씨 드립커피: 8,000원</li>
+						<li>드립라떼  : 8,500원</li>
+						<li>크림커피(오렌지/아몬드모카자바/코코넛버터) : 8,500원</li>
+						<li>티 (카프레디엄/트하이종 비잔틴/말린 장미차): 8,000원</li>
+					</ul>
+				</div>
+				
+ 				<p style="margin: 0 15px;">
+ 					<input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">서울특별시 종로구 수표로28길 17-24<br>
+ 					<input type="button" data-icon="bullets" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup48" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">메뉴</a>
+ 				</p>
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b><img class="dongyangDibs dibs" name="동백양과점" onclick="dongyangDibs()" src="nodibs.png"></p>
+				<br><br>
+
+				<div style="width:100%;">
+
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide24">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="namusairo1.jpg" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide24">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="namusairo2.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide24">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="namusairo3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide24">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="namusairo4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides24(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides24(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot24 active" onclick="currentSlide24(1)"></span> 
+  					<span class="dot24" onclick="currentSlide24(2)"></span> 
+	  				<span class="dot24" onclick="currentSlide24(3)"></span> 
+	  				<span class="dot24" onclick="currentSlide24(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>나무사이로 내자점
+					<span class="star Star24" style="margin: 0 5px;">
+        			<a href="#" onclick="star24(1)">★</a>
+        			<a href="#" onclick="star24(2)">★</a>
+        			<a href="#" onclick="star24(3)">★</a>
+	        		<a href="#" onclick="star24(4)">★</a>
+    			    <a href="#" onclick="star24(5)">★</a>
+    				</span>
+    			</h2>
+
+				</p>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>
+					커피숍/커피 전문점<br><br>
+				</p>
+				
+				<p style="margin:0 15px;">
+					<input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+					<a href="#myPopup49" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">영업시간
+					</a>&nbsp; <input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">070-7590-0885 &nbsp; 
+					<a href="http://www.namusairo.com/" target="_blank" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline"></a>홈페이지
+				</p>
+				<div data-role="popup" id="myPopup49">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider"><span style="color:red;">주말, 공휴일</span></li>
+						<li>10:00~22:00</li>
+						<li data-role="list-divider">평일</li>
+						<li>10:00~22:00</li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup50">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">메뉴</li>
+						<li>에스프레소: 5,000원</li>
+						<li>아메리카노: 5,000원</li>
+						<li>카페라떼  : 6,000원</li>
+						<li>콩가루 아이스크림: 6,000원</li>
+					</ul>
+				</div>
+				
+ 				<p style="margin: 0 15px;">
+ 					<input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">서울특별시 종로구 사직동 사직로8길 21<br>
+ 					<input type="button" data-icon="bullets" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup50" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">메뉴</a>
+ 				</p>
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b><img class="namusairoDibs dibs" name="나무사이로" onclick="namusairoDibs()" src="nodibs.png"></p>
+				<br><br>
+		</article>
+		<footer data-role="footer" data-fullscreen="true" data-position="fixed">
+			<h1>16112492 컴퓨터공학과 이동준</h1>
+		</footer>
+	</section>
+	<section id="seoul_activity" data-role="page" data-theme="a">
+		<header data-role="header">
+			<a href="index.html" data-ajax="false" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ">홈</a>
+			<h1>국내 여행지 추천</h1>
+			<a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">검색</a>
+		</header>
+			<div class="scroll-a">
+				<div class="scroll-b">
+					<ul class="nav">
+						<li class="nav"><a href="sightseeing.html" data-ajax="false" class="ui-btn ui-btn-b nav">관광지</a></li>
+						<li class="nav"><a href="restaurant.html" data-ajax="false" class="ui-btn ui-btn-b nav">유명맛집</a></li>
+						<li class="nav"><a href="lodging.html" data-ajax="false" class="ui-btn ui-btn-b nav">숙소</a></li>
+						<li class="nav"><a href="photospot.html" data-ajax="false" class="ui-btn ui-btn-b nav">사진명소</a></li>
+						<li class="nav"><a href="festival.html" data-ajax="false" class="ui-btn ui-btn-b nav">축제</a></li>
+						<li class="nav"><a href="cafe.html" data-ajax="false" class="ui-btn ui-btn-b nav">카페</a></li>
+						<li class="nav"><a href="activity.html" data-ajax="false" class="ui-btn ui-btn-b nav">액티비티</a></li>
+						<li class="nav"><a href="diblist.html" data-ajax="false" class="ui-btn ui-btn-b nav">찜목록</a></li>
+					</ul>
+				</div>
+			</div>
+		<br/>
+		<br/>
+		<br/>
+		<article data-role="content" class="ui-content">
+			<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide25">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="cart1.png" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide25">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="cart2.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide25">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="cart3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide25">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="cart4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides25(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides25(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot25 active" onclick="currentSlide25(1)"></span> 
+  					<span class="dot25" onclick="currentSlide25(2)"></span> 
+	  				<span class="dot25" onclick="currentSlide25(3)"></span> 
+	  				<span class="dot25" onclick="currentSlide25(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>잠실 카트체험장
+					<span class="star Star25" style="margin: 0 5px;">
+        			<a href="#" onclick="star25(1)">★</a>
+        			<a href="#" onclick="star25(2)">★</a>
+        			<a href="#" onclick="star25(3)">★</a>
+	        		<a href="#" onclick="star25(4)">★</a>
+    			    <a href="#" onclick="star25(5)">★</a>
+    				</span>
+    			</h2>
+
+				</p>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>
+					카트장<br><br>
+					잠실카트체험장은 잠실에 위치한 카트 체험장으로 남녀노소 누구나 운전면허가 없어도 모터스포츠를 통한 건전한 취미생활을 즐길 수 있는 곳이다. 예능 프로그램<우리 결혼했어요> 촬영지로도 이용됐었다. 매주 월요일, 행사 및 우천 시 휴무한다. 공휴일에는 정상적으로 영업한다.
+				</p>
+				
+				<p style="margin:0 15px;">
+					<input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+					<a href="#myPopup52" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">영업시간
+					</a>&nbsp; <input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">02-420-3886 &nbsp; 
+					<a href="http://www.birel.kr" target="_blank" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline"></a>홈페이지
+				</p>
+				<div data-role="popup" id="myPopup52">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider"><span style="color:red;">휴무</span></li>
+						<li><span style="color:red;">월요일</span></li>
+						<li data-role="list-divider">매일</li>
+						<li>10:00~18:00</li>
+					</ul>
+				</div>
+ 				<p style="margin: 0 15px;">
+ 					<input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">서울특별시 송파구 잠실2동 10<br>
+ 				</p>
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b><img class="cartDibs dibs" name="카트체험장" onclick="cartDibs()" src="nodibs.png"></p>
+				<br><br>
+				</div>
+
+				<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide26">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="lotteworld1.jpg" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide26">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="lotteworld2.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide26">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="lotteworld3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide26">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="lotteworld4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides26(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides26(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot26 active" onclick="currentSlide26(1)"></span> 
+  					<span class="dot26" onclick="currentSlide26(2)"></span> 
+	  				<span class="dot26" onclick="currentSlide26(3)"></span> 
+	  				<span class="dot26" onclick="currentSlide26(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>롯데월드
+					<span class="star Star26" style="margin: 0 5px;">
+        			<a href="#" onclick="star26(1)">★</a>
+        			<a href="#" onclick="star26(2)">★</a>
+        			<a href="#" onclick="star26(3)">★</a>
+	        		<a href="#" onclick="star26(4)">★</a>
+    			    <a href="#" onclick="star26(5)">★</a>
+    				</span>
+    			</h2>
+
+				</p>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>
+					테마파크<br><br>
+					롯데월드는 대한민국 서울특별시 송파구 올림픽로 240에 위치한 테마파크이다. 롯데그룹의 계열사인 호텔롯데 운영월드 사업부. 놀이시설은 실내의 롯데월드 어드벤처와 야외의 매직아일랜드가 운영되고 있고, 민속박물관, 아이스링크, 백화점, 마트, 호텔이 포함된다.
+				</p>
+
+				<p style="margin:0 15px;">
+					<input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+					<a href="#myPopup53" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">영업시간
+					</a>&nbsp; <input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">1661-2000 &nbsp; 
+					<a href="https://adventure.lotteworld.com/" target="_blank" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline"></a>홈페이지
+				</p>
+				
+				<div data-role="popup" id="myPopup53">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">영업시간</li>
+						<li>월요일 09:30 ~ 22:00</li>
+						<li>화요일 09:30 ~ 22:00</li>
+						<li>수요일 09:30 ~ 22:00</li>
+						<li>목요일 09:30 ~ 22:00</li>
+						<li>금요일 09:30 ~ 23:00</li>
+						<li>토요일 09:30 ~ 23:00</li>
+						<li data-role="list-divider"><span style="color: red;">휴무</span></li>
+						<li>매주 일요일</li>
+						<li data-role="list-divider">개장기간</li>
+						<li>연중무휴</li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup54">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">성인</li>
+						<li>종일(파크이용권) : 56,000원</li>
+						<li>After4(파크이용권) : 45,000원</li>
+						<li data-role="list-divider">청소년</li>
+						<li>종일(파크이용권) : 50,000원</li>
+						<li>After4(파크이용권) : 40,000원</li>
+						<li data-role="list-divider">어린이</li>
+						<li>종일(파크이용권) : 46,000원</li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup55">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">추가정보</li>
+						<li>주차공간</li>
+						<li>예약가능</li>
+						<li>유아시설(놀이방)</li>
+					</ul>
+				</div>
+ 				<p style="margin: 0 15px;">
+ 					<input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">서울특별시 송파구 잠실동 올림픽로 240<br>
+ 				</p>
+ 				<p style="margin: 0 15px;">
+ 				<input type="button" data-icon="bars" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup54" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">이용요금</a>
+ 					<input type="button" data-icon="bullets" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup55" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">추가정보</a>
+ 				</p>
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b><img class="lotteworldDibs dibs" name="롯데월드" onclick="lotteworldDibs()" src="nodibs.png"></p>
+				<br><br>
+				</div>
+
+				<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide27">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="gbboat1.jpg" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide27">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="gbboat2.png" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide27">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="gbboat3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide27">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="gbboat4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides27(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides27(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot27 active" onclick="currentSlide27(1)"></span> 
+  					<span class="dot27" onclick="currentSlide27(2)"></span> 
+	  				<span class="dot27" onclick="currentSlide27(3)"></span> 
+	  				<span class="dot27" onclick="currentSlide27(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>한강 세빛섬 수상레저체험
+					<span class="star Star27" style="margin: 0 5px;">
+        			<a href="#" onclick="star27(1)">★</a>
+        			<a href="#" onclick="star27(2)">★</a>
+        			<a href="#" onclick="star27(3)">★</a>
+	        		<a href="#" onclick="star27(4)">★</a>
+    			    <a href="#" onclick="star27(5)">★</a>
+    				</span>
+    			</h2>
+
+				</p>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>
+					수상레저체험<br><br>
+					세계 최초 수상 문화 공간, 반포 세빛섬에 위치한 골든블루마리나는 최고의 전문가들이 선보이는 다양한 프로그램과 드넓은 자연을 조망할 수 있는 한강의 혜택을 모두 담아 여유롭고 프라이빗한 일상을 선사합니다. 북쪽으로 남산 타워를 바라보며 남쪽으로 곧게 뻗은 반포대교 너머의 찬란한 달빛무지개분수는 기네스북에 등재된 ‘세계에서 가장 긴 교량 분수’로 이국적인 분위기를 더해줍니다. 화려한 네온사인과 LED 조명으로 낮과 밤이 색다른 세빛섬 골든블루마리나에서 가장 여유롭고 특별한 휴식의 시간이 되시길 바랍니다.
+				</p>
+
+				<p style="margin:0 15px;">
+					<input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+					<a href="#myPopup56" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">영업시간
+					</a>&nbsp; <input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">02-599-0900 &nbsp; 
+					<a href="http://www.gbboat.com/kor/flight/flight.php" target="_blank" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline"></a>홈페이지
+				</p>
+				
+				<div data-role="popup" id="myPopup56">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">평일</li>
+						<li>09:00 ~ 22:00</li>
+						<li data-role="list-divider">주말</li>
+						<li>09:00 ~ 22:00</li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup57">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">이용요금</li>
+						<li>레인보우브릿지요트투어(60분/1인) : 19,800원</li>
+						<li>리무진호 정기운항(30분/1인) : 20,000원</li>
+						<li>프린세스 요트 전체대여(30분) : 350,000원</li>
+						<li>씨레이 요트 전체대여(30분) : 250,000원</li>
+						<li>휄리 보트 전체대여(15분) : 60,000원</li>
+						<li>신데렐라 요트(60분/1인) : 20,000원</li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup58">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">추가정보</li>
+						<li>단체석</li>
+						<li>주차</li>
+						<li>예약</li>
+					</ul>
+				</div>
+ 				<p style="margin: 0 15px;">
+ 					<input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">서울특별시 서초구 반포2동 올림픽대로 2085-14 골든블루마리나<br>
+ 				</p>
+ 				<p style="margin: 0 15px;">
+ 				<input type="button" data-icon="bars" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup57" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">이용요금</a>
+ 					<input type="button" data-icon="bullets" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup58" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">추가정보</a>
+ 				</p>
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b><img class="gbboatDibs dibs" name="수상레저체험" onclick="gbboatDibs()" src="nodibs.png"></p>
+				<br><br>
+				</div>
+
+				<div style="width:100%;">
+				<div class="slideshow-container">
+				<div class="mySlides fade first slide28">
+  					<div class="numbertext">1 / 4</div>
+  					<img src="cable1.jpg" height="300" style="width:100%;">
+				</div>
+				<div class="mySlides fade slide28">
+  					<div class="numbertext">2 / 4</div>
+  					<img src="cable2.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide28">
+  					<div class="numbertext">3 / 4</div>
+  					<img src="cable3.jpg" height="300" style="width:100%">
+				</div>
+				<div class="mySlides fade slide28">
+  					<div class="numbertext">4 / 4</div>
+  					<img src="cable4.jpg" height="300" style="width:100%">
+				</div>
+				<a class="prev" onclick="plusSlides28(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides28(1)">&#10095;</a><br/>
+				</div>
+				<div style="text-align:center">
+  					<span class="dot28 active" onclick="currentSlide28(1)"></span> 
+  					<span class="dot28" onclick="currentSlide28(2)"></span> 
+	  				<span class="dot28" onclick="currentSlide28(3)"></span> 
+	  				<span class="dot28" onclick="currentSlide28(4)"></span> 
+				</div>
+				<h2 style="margin: 15px";>남산 케이블카
+					<span class="star Star28" style="margin: 0 5px;">
+        			<a href="#" onclick="star28(1)">★</a>
+        			<a href="#" onclick="star28(2)">★</a>
+        			<a href="#" onclick="star28(3)">★</a>
+	        		<a href="#" onclick="star28(4)">★</a>
+    			    <a href="#" onclick="star28(5)">★</a>
+    				</span>
+    			</h2>
+
+				</p>
+				<p style="margin: 15px; border: 1px solid black;"><span style="font-size:20px;"><b>소개: </b></span>
+					서울특별시의 산악 케이블카<br><br>
+					남산 케이블카 또는 남산 삭도는 서울특별시 중구 회현동의 승강장과 예장동 남산 정상 서울타워 부근에 위치한 승강장 사이를 운행하는 케이블카 구간을 말한다. 대한민국 최초의 여객용 케이블카로,1962년 5월 12일 운행을 개시하였으며, 한국삭도공업주식회사에서 운영하고 있다.
+				</p>
+
+				<p style="margin:0 15px;">
+					<input type="button" data-icon="clock" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+					<a href="#myPopup59" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">영업시간
+					</a>&nbsp; <input type="button" data-icon="phone" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">02-753-2403 &nbsp; 
+					<a href="http://www.cablecar.co.kr/chn/" target="_blank" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all ui-btn-inline"></a>홈페이지
+				</p>
+				
+				<div data-role="popup" id="myPopup59">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">영업시간</li>
+						<li>10:00 ~ 23:00</li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup60">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">대인</li>
+						<li>왕복 : 9,500원</li>
+						<li>왕복 (단체) : 8,000원</li>
+						<li>편도 : 7,000원</li>
+						<li data-role="list-divider">소인</li>
+						<li>왕복 : 6,500원</li>
+						<li>편도 : 4,000원</li>
+					</ul>
+				</div>
+				<div data-role="popup" id="myPopup61">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">추가정보</li>
+						<li>주차</li>
+					</ul>
+				</div>
+ 				<p style="margin: 0 15px;">
+ 					<input type="button" data-icon="location" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">서울특별시 중구 명동 소파로 83<br>
+ 				</p>
+ 				<p style="margin: 0 15px;">
+ 				<input type="button" data-icon="bars" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup60" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">이용요금</a>
+ 					<input type="button" data-icon="bullets" data-iconpos="notext" data-inline="true" value="Icon only" style="width: 50px;height: 50px;">
+ 					<a href="#myPopup61" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">추가정보</a>
+ 				</p>
+				<p style="margin: 15px;"><b style="font-size:20px;">찜하기:</b><img class="cableDibs dibs" name="케이블카" onclick="cableDibs()" src="nodibs.png"></p>
+				<br><br>
+				</div>
+		</article>
+		<footer data-role="footer" data-fullscreen="true" data-position="fixed">
+			<h1>16112492 컴퓨터공학과 이동준</h1>
+		</footer>
+	</section>
+</body>
+</html>
